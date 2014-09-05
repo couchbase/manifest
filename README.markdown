@@ -91,7 +91,7 @@ Optionally, you can install repo from homebrew as well:
 
 The following works for a clean Debian stable (squeeze) installation (under root):
 
-    aptitude install -y --without-recommends build-essential automake libtool pkg-config check libssl-dev sqlite3 libevent-dev libglib2.0-dev libcurl4-openssl-dev erlang-nox curl erlang-dev erlang-src ruby libmozjs-dev libicu-dev
+    aptitude install -y --without-recommends build-essential automake libtool pkg-config check libssl-dev sqlite3 libevent-dev libglib2.0-dev libcurl4-openssl-dev erlang-nox curl erlang-dev erlang-src ruby libmozjs-dev libicu-dev icu-config libsnappy-dev libcurl4-openssl-dev cloog-ppl libv8-dev
     aptitude install -y python-minimal
     aptitude install -y --without-recommends git-core
 
