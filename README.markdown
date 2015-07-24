@@ -65,7 +65,7 @@ build the desired version.
 (if you didn't install from homebrew, or aren't running on Mac OS X)
 
 Get the latest version from [the google project
-page](http://code.google.com/p/git-repo/downloads/list).
+page](https://storage.googleapis.com/git-repo-downloads/repo).
 
 ## Clone the Manifest
 
