@@ -5,7 +5,7 @@
   <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org"/>
   <remote name="couchbaselabs" fetch="git://github.com/couchbaselabs/" review="review.couchbase.org"/>
   <remote name="couchbasedeps" fetch="git://github.com/couchbasedeps/"/>
-  <remote name="arangodb" fetch="git://github.com/arangodb/"/>
+  <remote name="rain-1" fetch="git://github.com/rain-1/"/>
   <remote name="snej" fetch="git://github.com/snej/"/>
   <remote name="leetal" fetch="git://github.com/leetal/"/>
   <remote name="rudi-cilibrasi" fetch="git://github.com/rudi-cilibrasi/"/>
@@ -40,7 +40,7 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="mbedtls" remote="couchbasedeps" revision="eafaf1605d11e8ea3c9e6a9a251e616f5587f3fd" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/mbedtls"/>
   <project name="mbed-crypto" remote="couchbasedeps" revision="6572da5ba51abf56b3f0cc554fa3efec8f847a24" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/mbedtls/crypto"/>
-  <project name="linenoise-ng" remote="arangodb" revision="4754bee2d8eb3c4511e6ac87cac62255b2011e2f" path="couchbase-mobile-tools/vendor/linenoise-ng"/>
+  <project name="linenoise-mob" remote="rain-1" revision="a898fd484982f29354d32a2a1afe01a01024d99f" path="couchbase-mobile-tools/vendor/linenoise-mob"/>
   <project name="ios-cmake" remote="leetal" revision="29668dbcd9ef2fd7369140b7e9bd9df0485497f6" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/ios-cmake"/>
   <project name="sockpp" remote="couchbasedeps" revision="ffde73af5a834b074348f11f17f942fdeda5b7b4" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/sockpp"/>
   <project name="zlib" remote="couchbasedeps" revision="cacf7f1d4e3d44d871b605da3b647f07d718623f" path="couchbase-mobile-tools/vendor/couchbase-lite-core/vendor/zlib"/>
