@@ -113,7 +113,7 @@
 
   <!-- Couchbase internal build infrastructure -->
   <project name="build" path="cbbuild" revision="trinity" groups="notdefault,build">
-    <annotation name="VERSION" value="7.6.9"     keep="true"/>
+    <annotation name="VERSION" value="7.6.10"     keep="true"/>
     <annotation name="BSL_PRODUCT" value="Couchbase Server" keep="true"/>
     <annotation name="BSL_VERSION" value="7.6" keep="true"/>
     <annotation name="BSL_CHANGE_DATE" value="March 1, 2029" keep="true"/>
