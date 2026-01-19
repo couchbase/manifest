@@ -16,6 +16,6 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="product-texts" revision="master"/>
   <project name="build" revision="844e2484067053d7af88e706a814766265bf03df">
-    <annotation name="VERSION" value="3.3.1" keep="true"/>
+    <annotation name="VERSION" value="3.3.2" keep="true"/>
   </project>
 </manifest>
