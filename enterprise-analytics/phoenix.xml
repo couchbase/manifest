@@ -3,7 +3,7 @@
   <include name="couchbase-server/phoenix.xml"/>
 
   <!-- lock ns_server SHA for 2.1 GA -->
-  <extend-project name="ns_server" revision="e0a0eb9074ac784210444d0d973c149a117212b5" dest-branch="phoenix" />
+  <extend-project name="ns_server" revision="ed85480d76a7464fa353dd7ded45194b65ad2b4e" dest-branch="phoenix" />
 
   <!-- replicate the extended projects from the couchbase-server/phoenix.xml manifest to make the
      restricted branch check go -->
