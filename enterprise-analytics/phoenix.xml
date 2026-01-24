@@ -16,7 +16,7 @@
   <extend-project name="tlm" revision="phoenix" dest-branch="phoenix"/>
 
   <!-- Add the columnar-ui project -->
-  <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" />
+  <project name="columnar-ui-v1" revision="4284e5cee1af4344299a6858fcb5345f1089f6cd" groups="notdefault,build,enterprise,analytics" />
 
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
