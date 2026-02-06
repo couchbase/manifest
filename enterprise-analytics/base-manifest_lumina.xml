@@ -15,7 +15,7 @@
   <project name="build" path="cbbuild" revision="e52982a3d5e53eda4ceeb4298779a0801c3f6873" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="morpheus" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="4742" />
+    <annotation name="BLD_NUM" value="4745" />
     <annotation name="VERSION" value="8.0.1" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="8.0" />
@@ -52,18 +52,18 @@
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
   <project name="hebrew" remote="couchbase-priv" revision="c57616b187889a5318688f49817ccaceb9c098b9" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="1a5950b42107d184b65126c4a275f3d242189720" upstream="morpheus" dest-branch="unstable" groups="bsl" />
-  <project name="kv_engine" revision="3e74501731574a9336b364e1bad34c93d17bf23d" upstream="morpheus" dest-branch="morpheus" groups="kv,bsl" />
+  <project name="kv_engine" revision="4090ce67d6fe099d6b1586a54e789141565cb091" upstream="morpheus" dest-branch="morpheus" groups="kv,bsl" />
   <project name="libcouchbase" revision="a8e17873d167ec75338a358e54cec3994612d260" upstream="refs/tags/3.3.18" dest-branch="refs/tags/3.3.18" />
   <project name="magma" remote="couchbase-priv" revision="92df7217c6e4548357e23a58cdeda6c9d798969b" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise,kv_ee" />
   <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="64c09aa321603df0bf1b5404de5b9a66e30cf4e2" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="c33425b3950e060ea284df4c479448e7c17ac611" upstream="morpheus" dest-branch="unstable" groups="bsl" />
-  <project name="ns_server" revision="9c71ec1f3677a4978a5968348cdea71c7e108cd5" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
+  <project name="ns_server" revision="8a9ee3a6551b77691e12e8a158de26948d52d8c9" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="phosphor" revision="df9f5319f138bbf973f98b8180c80f3c5f95a9d1" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="41982af652d7f216a0dc9ad5266f5ddc74c7ec1e" upstream="morpheus" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="platform" revision="98a976929e44cd311c6cea07c6e80da2d96f0ed7" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
-  <project name="product-metadata" revision="89122c3e1cefe9873c36c01a7e4ea37195dcbc0a" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="d0850fb62cee7890526c7d5f5c0386e89424318e" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96" upstream="master" dest-branch="master" />
-  <project name="query" path="goproj/src/github.com/couchbase/query" revision="1dbdaefdbb57afce6eaefddaf7addf9598e5fd41" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
+  <project name="query" path="goproj/src/github.com/couchbase/query" revision="70a5e7a74408655e71945a1dc038734b910facff" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="3895ea633717eb018fb271477e7334ce95882b70" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise" />
   <project name="query-ui" revision="c2ae260baa1ab49d16a8d8ae204ecb4e61657439" upstream="master" dest-branch="master" groups="bsl" />
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="54ca6af1f3f0fd83fb684417b23c6741a81d31c0" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
