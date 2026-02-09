@@ -14,7 +14,7 @@
     Before releasing versions with this manifest, you probably want to update master.xml
     to make sure it isn't also creating 3.3 builds.
     -->
-    <annotation name="VERSION" value="3.3.1" keep="true"/>
+    <annotation name="VERSION" value="3.3.2" keep="true"/>
   </project>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->

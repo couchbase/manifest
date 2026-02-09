@@ -13,7 +13,7 @@
             "jenkins_job": "couchbase-lite-android"
         },
         "couchbase-lite-android/4.0.xml": {
-            "release_name": "Couchbase Lite Android - v4.0.2",
+            "release_name": "Couchbase Lite Android - v4.0.3",
             "production": true,
             "interval": 240,
             "restricted": false,
@@ -25,7 +25,7 @@
             "jenkins_job": "couchbase-lite-android"
         },
         "couchbase-lite-android/3.3.xml": {
-            "release_name": "Couchbase Lite Android - v3.3.1",
+            "release_name": "Couchbase Lite Android - v3.3.2",
             "production": true,
             "interval": 90,
             "restricted": false,

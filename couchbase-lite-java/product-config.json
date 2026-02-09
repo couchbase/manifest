@@ -13,7 +13,7 @@
             "jenkins_job": "couchbase-lite-java"
         },
         "couchbase-lite-java/4.0.xml": {
-            "release_name": "Couchbase Lite Java - v4.0.2",
+            "release_name": "Couchbase Lite Java - v4.0.3",
             "production": true,
             "interval": 240,
             "restricted": false,
