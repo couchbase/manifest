@@ -31,22 +31,22 @@
   <project name="plasma" revision="e5440f92d1535d504458ab3460c0bfee87d402a1" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="eventing" revision="188a60d965322d6873d73cd8e5e0e9a1542d2acd" path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" revision="b7d75cf5f2b7ab96e0f4b054eba9d087ef800911" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
-  <project name="kv_engine" revision="trinity" groups="kv,bsl"/>
+  <project name="kv_engine" revision="2c98fcb3a06cd76113d27542e0ac10e9011b5446" groups="kv,bsl"/>
   <project name="libcouchbase" revision="refs/tags/3.3.18"/>
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" revision="a2bcee1b7fbdcde15b53516219096d9fa44fe601"/>
-  <project name="ns_server" revision="trinity" groups="bsl"/>
+  <project name="ns_server" revision="f081edeb105474b71f6ec8222e8643fc21912af7" groups="bsl"/>
   <project name="chronicle" revision="8d1feeb0d8b15e2b6a4c1a417addfd159b422a71" path="ns_server/deps/chronicle"/>
   <project name="vbmap" revision="6cce93c4af4497d8108c3ed31b84d7139321cc82"/>
   <project name="phosphor" groups="bsl,kv" revision="cc766a5e5a5ff6ba5b7f522e12765d16778ed507"/>
   <project name="platform" revision="264df3d7303133025b2dedc7c58dfcdd74ecf819" groups="bsl,kv"/>
   <project name="product-texts"/>
-  <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise" revision="trinity"/>
-  <project name="query" path="goproj/src/github.com/couchbase/query" groups="bsl" revision="trinity"/>
+  <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise" revision="c610b2284d4c0a304a464740e7a11e00d6d92818"/>
+  <project name="query" path="goproj/src/github.com/couchbase/query" groups="bsl" revision="cbb43ddfb0e78a7fb5ff2dba0717655adf7b3763"/>
   <project name="query-ui" groups="bsl" revision="0ca6223cc1fa944de0d7b3c0b1561ed8c4802d1e"/>
   <project name="regulator" revision="54ca6af1f3f0fd83fb684417b23c6741a81d31c0" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="sigar" groups="kv" revision="8e33950e677d96baea6ab7cced693ff367ec1353"/>
   <project name="subjson" groups="bsl,kv" revision="9e445e8544fab2171f2ccb1b688fecf9257e02c8"/>
-  <project name="testrunner" revision="trinity"/>
+  <project name="testrunner" revision="b67cc80c78b6020e23ed2bb0905bf1be720fe742"/>
   <project name="tlm" groups="bsl,kv" revision="3b67fd3d155e15d5c528f60631cb65336b5dae61">
     <copyfile src="Build.sh" dest="Build.sh"/>
     <copyfile src="GNUmakefile" dest="GNUmakefile"/>
@@ -58,7 +58,7 @@
   </project>
   <project name="udf-api" path="goproj/src/github.com/couchbase/udf-api" revision="b2788ae3d412356a330b36d7f38ad2c66edb5879"/>
   <!-- Analytics additions -->
-  <project name="cbas-core" path="analytics" revision="trinity" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
+  <project name="cbas-core" path="analytics" revision="e2b0a1dc743022bc97110efb681cf16eced48e6d" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
   <project name="asterixdb" path="analytics/asterixdb" revision="a41604b9953cb7eb78dfb5c746191102cbaae631" groups="notdefault,enterprise,analytics"/>
   <project name="analytics-dcp-client" path="analytics/java-dcp-client" revision="4120d393849b0662cd2b68efe3e87c5fcacaf1c5" groups="notdefault,enterprise,analytics"/>
   <project name="couchbase-jvm-core" path="analytics/couchbase-jvm-core" revision="refs/tags/1.7.24" groups="notdefault,enterprise,analytics"/>
