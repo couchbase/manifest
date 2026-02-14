@@ -7,7 +7,7 @@
             "start_build": 1,
             "jenkins_job": "cbdeps-build",
             "platforms": [
-                "linux", "linux:aarch64"
+                "linux", "linux:arm64"
             ],
             "do-build": false,
             "keep_git": true
