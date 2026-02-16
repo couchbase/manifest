@@ -13,7 +13,7 @@
             "production": true,
             "interval": 120,
             "restricted": false,
-            "start_build": 253,
+            "start_build": 138,
             "trigger_blackduck": true,
             "jenkins_job": "couchbase-k8s-microservice-build",
             "keep_git": true

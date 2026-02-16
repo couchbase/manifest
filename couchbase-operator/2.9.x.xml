@@ -14,7 +14,7 @@
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
-    <annotation name="VERSION" value="2.9.0" keep="true"/>
+    <annotation name="VERSION" value="2.9.1" keep="true"/>
     <annotation name="GOVERSION" value="SUPPORTED_NEWER" keep="true"/>
   </project>
   <project name="golang" revision="main" remote="couchbaselabs"/>
