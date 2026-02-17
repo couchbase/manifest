@@ -93,5 +93,5 @@
   <project name="voltron" revision="morpheus" remote="couchbase-priv"  groups="notdefault,packaging" />
   <project name="couchdbx-app" groups="notdefault,packaging" />
   <project name="product-metadata" groups="notdefault,packaging" />
-  <project name="golang" revision="main" remote="couchbaselabs" groups="kv"/>
+  <project name="golang" revision="e7aae8e0c56576e946c8483fd53f3812afc07f04" remote="couchbaselabs" groups="kv"/>
 </manifest>
