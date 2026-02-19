@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/"/>
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/"/>
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/"/>
+
+  <default remote="couchbase" revision="master"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Couchbase-owned primary repository                 -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="prometheus" path="goproj/src/github.com/prometheus/prometheus" remote="couchbasedeps" revision="refs/tags/v3.9.1"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Build support - build scripts, etc.                -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="build-tools" path="build-tools"/>
+  <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
+    <annotation name="VERSION" value="3.9.1" keep="true"/>
+    <annotation name="BD_VERSION" value="3.9.1" keep="true"/>
+    <annotation name="GOVERSION" value="SUPPORTED_NEWER" keep="true"/>
+    <annotation name="NODEJS_VERSION" value="24.0.0" keep="true"/>
+  </project>
+  <project name="golang" revision="main" remote="couchbaselabs"/>
+</manifest>

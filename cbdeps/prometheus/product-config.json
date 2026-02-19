@@ -15,6 +15,23 @@
             "trigger_blackduck": true,
             "keep_git": true
         },
+        "cbdeps/prometheus/3.9.xml": {
+            "production": true,
+            "restricted": false,
+            "start_build": 1,
+            "jenkins_server": "server.jenkins.couchbase.com",
+            "jenkins_job": "cbdeps-build",
+            "jenkins_job_parameters": {
+                "SERVER_RELEASE": "totoro"
+            },
+            "platforms": [ "linux",
+                           "linux:aarch64",
+                           "macos",
+                           "macos:arm64",
+                           "linux:cross-windows" ],
+            "do-build": false,
+            "keep_git": true
+        },
         "cbdeps/prometheus/2.33.xml": {
             "production": true,
             "restricted": false,
