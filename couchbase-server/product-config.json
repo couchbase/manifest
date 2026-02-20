@@ -31,7 +31,7 @@
         },
         "couchbase-server/morpheus/8.0.0.xml": {
             "release": "morpheus",
-            "release_name": "Morpheus (8.0.0-MP1 Place Holder)",
+            "release_name": "Morpheus (8.0.0-MP1)",
             "parent": "couchbase-server/morpheus.xml",
             "production": true,
             "start_build": 3683,
@@ -39,7 +39,7 @@
             "interval": 117,
             "keep_git": true,
             "restricted": true,
-            "approval_ticket": "MB-69336"
+            "approval_ticket": "MB-70622"
         },
         "couchbase-server/cypher.xml": {
             "release": "cypher",

@@ -31,8 +31,8 @@
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" dest-branch="unstable" groups="bsl" revision="c66dd2143173488813b12a16b04501b74c6491b9"/>
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" dest-branch="unstable" groups="bsl" revision="63281761d533f1ad27c790fd6519c13a9a69c2d4"/>
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise" revision="0c0e51967c17369ebb9071fd4ad257cf5121e629"/>
-  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise" revision="ec085fd52c3391765cd481b9a0d769ea8d2f15fc"/>
-  <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise" revision="1d3aa987fabd15fa0b80046ecd062e85df510158"/>
+  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise" revision="8.0.0"/>
+  <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise" revision="8.0.0"/>
   <project name="kv_engine" revision="8c2b87e4e0073fa2c5195942ec0b5ea0ea661e1f" groups="kv,bsl"/>
   <project name="libcouchbase" revision="refs/tags/3.3.18"/>
   <project name="magma" revision="1b7f789d488dfae0cb21a0e2fb2acb72def312c8" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv"/>
