@@ -1,0 +1,20 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="java/release/4.0" />
+  
+  <project name="build" path="cbbuild" revision="fa5df77677945a629aeb82aeaa3d43218df2a88d" groups="notdefault">
+    <annotation name="RELEASE" value="4.0.3" />
+    <annotation name="PRODUCT" value="couchbase-lite-java" />
+    <annotation name="BLD_NUM" value="2" />
+    <annotation name="VERSION" value="4.0.3" />
+  </project>
+  <project name="couchbase-lite-java-ce" path="cbl-java/ce" revision="d45f9ce9671db8628c226ad0366a5f94cfd7e949" />
+  <project name="couchbase-lite-java-common" path="cbl-java/common" revision="f35e1897c7a6d754e56404f6ba87f699a8d89acf" />
+  <project name="couchbase-lite-java-ee-root" path="cbl-java" remote="couchbaselabs-priv" revision="a28edf0c132ed59f8ce940361c6b207591fe43fe" upstream="java/release/4.0" dest-branch="java/release/4.0" />
+  <project name="couchbase-lite-java-tools" path="cbl-java/etc" remote="couchbaselabs" revision="ff53c0aacba18c449a9e934f28cc2bd525b80536" />
+  <project name="litecore-download-script" path="cbl-java/core_tools" remote="couchbaselabs" revision="a71a5a9f2bb808cb2c45a82fe39fd5d4c43e5597" />
+  <project name="product-texts" path="cbl-java/legal" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96" upstream="master" dest-branch="master" />
+</manifest>
