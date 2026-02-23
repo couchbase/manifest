@@ -1,0 +1,18 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="release/4.0" />
+  
+  <project name="build" path="cbbuild" revision="cf20ab9c0f7d81838212b1f2d719903ffb4a4d9e">
+    <annotation name="RELEASE" value="4.0.3" />
+    <annotation name="PRODUCT" value="couchbase-lite-c" />
+    <annotation name="BLD_NUM" value="3" />
+    <annotation name="VERSION" value="4.0.3" />
+  </project>
+  <project name="couchbase-lite-c" revision="21f4b4940e46eb546aabc08c8c0f4f44f0263328" upstream="release/4.0" dest-branch="release/4.0" sync-s="true">
+    <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt" />
+  </project>
+  <project name="couchbase-lite-c-ee" remote="couchbase-priv" revision="7e2083f193fc46b674b8b26eb9ea3868736bab27" upstream="release/4.0" dest-branch="release/4.0" groups="notdefault,enterprise" sync-s="true" />
+  <project name="product-texts" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96" upstream="master" dest-branch="master" />
+</manifest>
