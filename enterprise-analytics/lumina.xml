@@ -4,8 +4,8 @@
   <include name="enterprise-analytics/base-manifest_lumina.xml"/>
 
   <!-- Pick up Analytics projects from master & phoenix branches -->
-  <extend-project name="cbas-core" revision="master" dest-branch="master" />
-  <extend-project name="asterixdb" revision="master" dest-branch="master" />
+  <extend-project name="cbas-core" revision="master" dest-branch="lumina" />
+  <extend-project name="asterixdb" revision="master" dest-branch="lumina" />
   <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
   <extend-project name="cbas" revision="master" dest-branch="master" />
   <extend-project name="cbas-ui" revision="master" dest-branch="master" />
