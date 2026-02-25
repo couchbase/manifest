@@ -15,7 +15,7 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build-tools" path="build-tools"/>
   <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
-    <annotation name="VERSION" value="1.13.1" keep="true"/>
+    <annotation name="VERSION" value="1.13.2" keep="true"/>
     <annotation name="OPENBLAS_VERSION" value="0.3.28-1" keep="true"/>
     <annotation name="LLVM_OPENMP_VERSION" value="16.0.4" keep="true"/>
   </project>
