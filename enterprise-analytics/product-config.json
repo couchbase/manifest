@@ -20,7 +20,7 @@
             "production": true,
             "start_build": 1300,
             "trigger_blackduck": true,
-            "interval": 480,
+            "interval": 1440,
             "keep_git": true,
             "jenkins_job": "couchbase-columnar-build",
             "restricted": true,
@@ -32,7 +32,7 @@
             "production": true,
             "start_build": 1050,
             "trigger_blackduck": true,
-            "interval": 1440,
+            "interval": 240,
             "keep_git": true,
             "jenkins_job": "couchbase-columnar-build",
             "approval_ticket": "MB-67780"
