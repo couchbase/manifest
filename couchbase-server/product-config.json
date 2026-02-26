@@ -19,12 +19,24 @@
         },
         "couchbase-server/morpheus.xml": {
             "release": "morpheus",
-            "release_name": "Morpheus (8.0.1)",
+            "release_name": "Morpheus (8.0.2)",
             "parent": "branch-master.xml",
+            "production": true,
+            "start_build": 5200,
+            "trigger_blackduck": true,
+            "interval": 283,
+            "keep_git": true,
+            "restricted": true,
+            "approval_ticket": "MB-68285"
+        },
+        "couchbase-server/morpheus/8.0.1.xml": {
+            "release": "morpheus",
+            "release_name": "Morpheus (8.0.1)",
+            "parent": "couchbase-server/morpheus.xml",
             "production": true,
             "start_build": 4500,
             "trigger_blackduck": true,
-            "interval": 283,
+            "interval": 117,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-68285"
