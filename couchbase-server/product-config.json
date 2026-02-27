@@ -27,7 +27,7 @@
             "interval": 283,
             "keep_git": true,
             "restricted": true,
-            "approval_ticket": "MB-68285"
+            "approval_ticket": "MB-69965"
         },
         "couchbase-server/morpheus/8.0.1.xml": {
             "release": "morpheus",
