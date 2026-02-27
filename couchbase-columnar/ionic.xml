@@ -10,7 +10,7 @@
   <extend-project name="cbas" revision="ionic" />
   <extend-project name="cbas-ui" revision="011d6a502cfb84af4a64bb1ca198e28daa375de9" />
 
-  <extend-project name="regulator" revision="main" />
+  <extend-project name="regulator" revision="54ca6af1f3f0fd83fb684417b23c6741a81d31c0" />
 
   <!-- pick up latest product-texts so we have the most accurate README.txt & licenses -->
   <extend-project name="product-texts" revision="master" />

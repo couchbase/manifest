@@ -14,6 +14,7 @@
   <extend-project name="cbas-ui" revision="7f777958f32716aefb8479031141cdbe5c777abd" dest-branch="master" />
   <extend-project name="voltron" revision="phoenix" dest-branch="phoenix" />
   <extend-project name="tlm" revision="phoenix" dest-branch="phoenix"/>
+  <extend-project name="regulator" revision="54ca6af1f3f0fd83fb684417b23c6741a81d31c0" />
 
   <!-- Add the columnar-ui project -->
   <project name="columnar-ui-v1" revision="4284e5cee1af4344299a6858fcb5345f1089f6cd" groups="notdefault,build,enterprise,analytics" />
