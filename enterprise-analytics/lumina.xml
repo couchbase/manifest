@@ -13,9 +13,6 @@
   <!-- Add the columnar-ui project -->
   <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" />
 
-  <!-- pick up latest regulator -->
-  <extend-project name="regulator" revision="main" dest-branch="main" />
-
   <!-- pick up latest product-texts so we have the most accurate README.txt & licenses -->
   <extend-project name="product-texts" revision="master" />
 
@@ -62,4 +59,5 @@
   <remove-project name="udf-api"/>
   <remove-project name="godbc"/>
   <remove-project name="nitro"/>
+  <remove-project name="regulator"/>
 </manifest>
