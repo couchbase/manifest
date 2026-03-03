@@ -8,7 +8,7 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned primary repository                 -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="couchbase-operator" revision="2.2.x"/>
+  <project name="couchbase-operator" revision="2.2.x" groups="bsl"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
@@ -16,5 +16,9 @@
   <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
     <annotation name="VERSION" value="2.2.5" keep="true"/>
     <annotation name="GOVERSION" value="1.18.5" keep="true"/>
+    <annotation name="BSL_PRODUCT" value="Couchbase Operator" keep="true"/>
+    <annotation name="BSL_VERSION" value="2.2" keep="true"/>
+    <annotation name="BSL_CHANGE_DATE" value="March 1st, 2030" keep="true"/>
+    <annotation name="BSL_MAIN_OK" value="true" keep="true"/>
   </project>
 </manifest>
