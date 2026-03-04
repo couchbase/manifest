@@ -31,7 +31,7 @@
   <project name="nitro" revision="c33425b3950e060ea284df4c479448e7c17ac611" path="goproj/src/github.com/couchbase/nitro" dest-branch="unstable" groups="bsl"/>
   <project name="indexing" revision="morpheus" path="goproj/src/github.com/couchbase/indexing" dest-branch="unstable" groups="bsl"/>
   <project name="plasma" revision="41982af652d7f216a0dc9ad5266f5ddc74c7ec1e" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
-  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="0be73b31722b89708d62b477bc4d96d612c02255" dest-branch="unstable" groups="notdefault,enterprise"/>
+  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="ae3a335ef6a03dffdcf585028e2d6d3bc44faa2f" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="1392f2e0a55ef38d3cf70ff5caeac0298759bc99" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="kv_engine" revision="81d05fecc1b47141900f42b4170f178969861ce9" groups="kv,bsl"/>
   <project name="libcouchbase" revision="refs/tags/3.3.18"/>
