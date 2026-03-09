@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="couchbase" fetch="https://github.com/couchbase/"/>
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/"/>
   <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/"/>
 
   <default remote="couchbase" revision="master"/>
@@ -10,14 +11,15 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- This SHA was requested by eventing team - MB-34421 -->
   <!-- It's somewhere between 1.2.0 and 1.3.0, so I called it "1.2.5" -->
-  <project name="protobuf" path="protoc-gen-go" remote="couchbasedeps" revision="ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d"/>
+  <project name="protobuf-go" path="protoc-gen-go" remote="couchbasedeps" revision="refs/tags/v1.36.11"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build-tools" path="build-tools"/>
   <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
-    <annotation name="VERSION" value="1.2.5" keep="true"/>
-    <annotation name="GOVERSION" value="1.20" keep="true"/>
+    <annotation name="VERSION" value="1.36.11" keep="true"/>
+    <annotation name="GOVERSION" value="SUPPORTED_NEWER" keep="true"/>
   </project>
+  <project name="golang" revision="main" remote="couchbaselabs"/>
 </manifest>

@@ -1,8 +1,6 @@
 {
     "manifests": {
         "cbdeps/protoc-gen-go/master.xml": {
-            "release": "1.2.5",
-            "release_name": "protoc-gen-go 1.2.5",
             "production": true,
             "restricted": false,
             "start_build": 1,
