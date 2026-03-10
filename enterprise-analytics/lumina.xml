@@ -22,6 +22,10 @@
   <!-- per ceej, we should pick up the latest golang project -->
   <extend-project name="golang" revision="main" />
 
+  <!-- advance select projects to enable Go & Python to be advanced ahead of 8.0.1 for CVEs -->
+  <extend-project name="voltron" revision="a99da6a9ae710bf48d186bc9b5722a58bf5d885c"/>
+  <extend-project name="tlm" revision="8757716132bcbb908c2e81f15f0fb1ca8f79c597"/>
+
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
   <project name="build" path="cbbuild" revision="" upstream="master" dest-branch="master" groups="notdefault,build">
