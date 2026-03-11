@@ -35,7 +35,7 @@
   <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="51c1f99e3f6e8f6ef001976dd262c486481ede3b" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="38450dcfbaba1809fdfb7ea6dfd138158f441278" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="forestdb" revision="9efe6d75d7d61e742af70fb47fe97ad1d04ba86f" upstream="cb-master" dest-branch="cb-master" groups="backup" />
-  <project name="fusion" remote="couchbase-priv" revision="77fa740c3f7c551770bbad0c4878897baa4876a1" upstream="main" dest-branch="main" groups="notdefault,enterprise,kv_ee" />
+  <project name="fusion" remote="couchbase-priv" revision="179f15011f7c44cc2ac94a17e639f22631ca9912" upstream="main" dest-branch="main" groups="notdefault,enterprise,kv_ee" />
   <project name="geocouch" revision="68f3b9d36630682d17ca5232770f1693b9b8fa18" upstream="master" dest-branch="master" />
   <project name="go-couchbase" path="goproj/src/github.com/couchbase/go-couchbase" revision="959eaf944140a6c660990f38b1db310ddd6d8e42" upstream="master" dest-branch="master" groups="backup" />
   <project name="go_json" path="goproj/src/github.com/couchbase/go_json" revision="4641f4ef857826a06f48e5064ff556b3744c07fd" upstream="master" dest-branch="master" />
@@ -51,7 +51,7 @@
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="7b2d8bf967a74ae91f30773b83fef222796c0297" upstream="master" dest-branch="unstable" groups="bsl" />
   <project name="kv_engine" revision="2ab7f8876d8798f94ab6134d0b2893bbf29b99de" upstream="master" dest-branch="master" groups="kv,bsl" />
   <project name="libcouchbase" revision="5c05e44af1424591b223fb06a4cb007ea381923f" upstream="refs/tags/3.3.16" dest-branch="refs/tags/3.3.16" />
-  <project name="magma" remote="couchbase-priv" revision="c18a9b2e76becd6b69494df2610d4bbcf1300599" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
+  <project name="magma" remote="couchbase-priv" revision="f1605d20cd13edf4579b9ab2a4553357ff1b5337" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
   <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="69ba98e7a21fa18f5cc650aeb7d96849e5062e83" upstream="master" dest-branch="master" groups="bsl" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="138b8723eee3c0103ec590ea6695410ee76a7fc1" upstream="master" dest-branch="unstable" groups="bsl" />
   <project name="ns_server" revision="00d3b1c46691ddfc64c5023ea46cfb84f354be69" upstream="master" dest-branch="master" groups="bsl" />
