@@ -11,7 +11,6 @@
   <extend-project name="cbas-ui" revision="master" dest-branch="master" />
 
   <!-- Update build project to provide different annotations -->
-  <remove-project name="build"/>
   <extend-project name="build">
     <annotation name="VERSION" value="2.3.0"     keep="true"/>
     <annotation name="COLUMNAR_COMPAT_VERSION" value="2.3.0"/>
