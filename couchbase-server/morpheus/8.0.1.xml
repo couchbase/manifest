@@ -12,7 +12,7 @@
   <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise" revision="983714b2982e1e493e547acbca63790941897464"/>
   <project name="bhive" path="goproj/src/github.com/couchbase/bhive" remote="couchbase-priv" revision="9f0fa178952fa3291589c355a541f4131f325732" groups="notdefault,enterprise"/>
   <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise" revision="44f4aebb05a1fbf50d441831ff77d7ec752b289e"/>
-  <project name="cbft" revision="d86a43a483cd9ddc535fa6d2926a8d5306f88124"/>
+  <project name="cbft" revision="morpheus"/>
   <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise" revision="269c1d9da11b5a346726f93ef0aaca66c56d9062"/>
   <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise" revision="c57616b187889a5318688f49817ccaceb9c098b9"/>
   <project name="cbgt" revision="cb32312a2741cb61b96cbffecce046eb02f55358"/>
