@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="enterprise-analytics/lumina.xml"/>
+
+  <!-- Pick up Analytics projects from master & phoenix branches -->
+  <extend-project name="cbas-core" revision="master" dest-branch="master" />
+  <extend-project name="asterixdb" revision="master" dest-branch="master" />
+  <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
+  <extend-project name="cbas" revision="master" dest-branch="master" />
+  <extend-project name="cbas-ui" revision="master" dest-branch="master" />
+
+  <!-- Update build project to provide different annotations -->
+  <remove-project name="build"/>
+  <extend-project name="build">
+    <annotation name="VERSION" value="2.3.0"     keep="true"/>
+    <annotation name="COLUMNAR_COMPAT_VERSION" value="2.3.0"/>
+    <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0"/>
+    <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="2.1.0"/>
+  </extend-project>
+
+</manifest>
