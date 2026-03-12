@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="couchbase"     fetch="https://github.com/couchbase/"         review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/"    review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/"     review="review.couchbase.org" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/"     review="review.couchbase.org" />
+  <remote name="blevesearch"   fetch="https://github.com/blevesearch/" />
+
+  <default remote="couchbase" revision="master" />
+
+  <!-- Core Couchbase Server projects -->
+  <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise" revision="morpheus"/>
+  <project name="bhive" path="goproj/src/github.com/couchbase/bhive" remote="couchbase-priv" revision="morpheus" groups="notdefault,enterprise"/>
+  <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise" revision="morpheus"/>
+  <project name="cbft" revision="morpheus"/>
+  <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise" revision="morpheus"/>
+  <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise"/>
+  <project name="cbgt" revision="morpheus"/>
+  <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl"/>
+  <project name="couchbase-cli" groups="kv" revision="morpheus"/>
+  <project name="couchdb" revision="morpheus" dest-branch="unstable"/>
+  <project name="couchstore" revision="morpheus" groups="kv"/>
+  <project name="docloader" path="goproj/src/github.com/couchbase/docloader" />
+  <!-- forestdb uses "cb-master" branch in place of "master" for all production builds. -->
+  <!-- Future release-specific git branches, if necessary, should be made from cb-master. -->
+  <project name="forestdb" revision="cb-master" groups="backup"/>
+  <project name="geocouch"/>
+  <project name="gocbcrypto"  path="goproj/src/github.com/couchbase/gocbcrypto" remote="couchbase-priv" revision="morpheus" groups="notdefault,enterprise"/>
+  <project name="goxdcr"      revision="morpheus" path="goproj/src/github.com/couchbase/goxdcr" groups="bsl"/>
+  <project name="gometa"      revision="morpheus"     path="goproj/src/github.com/couchbase/gometa"/>
+  <project name="nitro"       revision="morpheus"      path="goproj/src/github.com/couchbase/nitro" dest-branch="unstable" groups="bsl"/>
+  <project name="indexing"    revision="morpheus"   path="goproj/src/github.com/couchbase/indexing" dest-branch="unstable" groups="bsl"/>
+  <project name="plasma"      revision="morpheus"     path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
+  <project name="eventing"    path="goproj/src/github.com/couchbase/eventing" revision="morpheus" dest-branch="unstable" groups="notdefault,enterprise"/>
+  <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="morpheus" dest-branch="unstable" groups="notdefault,enterprise"/>
+  <project name="kv_engine" revision="morpheus" groups="kv,bsl"/>
+  <project name="libcouchbase" revision="refs/tags/3.3.18"/>
+  <project name="magma" revision="morpheus" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
+  <project name="ns_server" revision="morpheus" groups="bsl"/>
+  <project name="vbmap"/>
+  <project name="phosphor" revision="morpheus" groups="bsl,kv"/>
+  <project name="platform" revision="morpheus" groups="bsl,kv"/>
+  <project name="product-texts"/>
+  <project name="query-ee" revision="morpheus" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
+  <project name="query" revision="morpheus" path="goproj/src/github.com/couchbase/query" groups="bsl"/>
+  <project name="query-ui" groups="bsl"/>
+  <project name="regulator" revision="main" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
+  <project name="sigar" revision="morpheus" groups="kv"/>
+  <project name="subjson" revision="morpheus" groups="bsl,kv"/>
+  <project name="testrunner" revision="morpheus"/>
+  <project name="tlm" revision="morpheus" groups="bsl,kv">
+    <copyfile src="Build.sh" dest="Build.sh" />
+    <copyfile src="GNUmakefile"    dest="GNUmakefile"    />
+    <copyfile src="Makefile"       dest="Makefile"       />
+    <copyfile src="CMakeLists.txt" dest="CMakeLists.txt" />
+    <copyfile src="dot-clang-format" dest=".clang-format" />
+    <copyfile src="dot-clang-tidy" dest=".clang-tidy" />
+    <copyfile src="third-party-CMakeLists.txt" dest="third_party/CMakeLists.txt" />
+  </project>
+  <project name="udf-api"     path="goproj/src/github.com/couchbase/udf-api"/>
+  <project name="xdcrDiffer"  path="goproj/src/github.com/couchbase/xdcrDiffer" revision="morpheus"/>
+  <!-- Analytics additions -->
+  <project name="cbas-core" revision="morpheus" path="analytics" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
+  <project name="asterixdb" revision="morpheus" path="analytics/asterixdb" groups="notdefault,enterprise,analytics"/>
+  <project name="analytics-dcp-client" revision="morpheus" path="analytics/java-dcp-client" groups="notdefault,enterprise,analytics"/>
+  <project name="cbas" revision="morpheus" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
+  <project name="cbas-ui" revision="morpheus" groups="notdefault,enterprise,analytics"/>
+
+  <!-- Third-party projects -->
+  <project name="bleve"              remote="blevesearch"   revision="mergeBug801"   path="godeps/src/github.com/blevesearch/bleve"/>
+
+  <!-- Go support libraries - Couchbase-supported -->
+  <!-- Some are in goproj to facilitate eventual move to Go modules -->
+  <project name="n1fty" revision="morpheus"                                          path="goproj/src/github.com/couchbase/n1fty" groups="bsl"/>
+  <project name="go_json" revision="morpheus"                                        path="goproj/src/github.com/couchbase/go_json"/>
+  <project name="gomemcached" revision="morpheus"                                    path="goproj/src/github.com/couchbase/gomemcached" groups="backup"/>
+  <project name="cbauth" revision="morpheus"                                         path="goproj/src/github.com/couchbase/cbauth" groups="backup"/>
+  <project name="go-couchbase" revision="morpheus"                                   path="goproj/src/github.com/couchbase/go-couchbase" groups="backup"/>
+  <project name="goutils" revision="morpheus"                                        path="goproj/src/github.com/couchbase/goutils" groups="bsl"/>
+  <project name="godbc" revision="morpheus"                                          path="goproj/src/github.com/couchbase/godbc"/>
+
+  <!-- C/C++ support libraries -->
+  <project name="gsl-lite"       remote="couchbasedeps" revision="refs/tags/v0.38.1" path="third_party/gsl-lite" groups="kv"/>
+  <project name="HdrHistogram_c" remote="couchbasedeps" revision="9ead6b88adbf8d6131e5ae7a3a699c477a3b4195" path="third_party/HdrHistogram_c" groups="kv"/>
+
+  <!-- Couchbase internal build infrastructure -->
+  <project name="build"      path="cbbuild"           groups="notdefault,build">
+    <annotation name="VERSION" value="8.0.2"     keep="true"/>
+    <annotation name="BSL_PRODUCT" value="Couchbase Server" keep="true"/>
+    <annotation name="BSL_VERSION" value="8.0" keep="true"/>
+    <annotation name="BSL_CHANGE_DATE" value="March 1, 2029" keep="true"/>
+    <annotation name="BSL_MAIN_OK" value="true" keep="true"/>
+  </project>
+  <project name="voltron" revision="morpheus" remote="couchbase-priv"  groups="notdefault,packaging" />
+  <project name="couchdbx-app" groups="notdefault,packaging" />
+  <project name="product-metadata" groups="notdefault,packaging" />
+  <project name="golang" revision="main" remote="couchbaselabs" groups="kv"/>
+</manifest>
