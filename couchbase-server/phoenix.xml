@@ -15,8 +15,8 @@
   <extend-project name="cbas-core" revision="phoenix" dest-branch="phoenix" />
   <extend-project name="asterixdb" revision="phoenix" dest-branch="phoenix" />
   <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
-  <extend-project name="cbas" revision="master" dest-branch="master" />
-  <extend-project name="cbas-ui" revision="master" dest-branch="master" />
+  <extend-project name="cbas" revision="phoenix" dest-branch="phoenix" />
+  <extend-project name="cbas-ui" revision="phoenix" dest-branch="phoenix" />
 
   <!-- Pickup voltron project from the phoenix branch -->
   <extend-project name="voltron" revision="phoenix" dest-branch="phoenix" />
