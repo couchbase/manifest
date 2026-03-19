@@ -17,7 +17,7 @@
   <extend-project name="regulator" revision="54ca6af1f3f0fd83fb684417b23c6741a81d31c0" />
 
   <!-- Add the columnar-ui project -->
-  <project name="columnar-ui-v1" revision="4284e5cee1af4344299a6858fcb5345f1089f6cd" groups="notdefault,build,enterprise,analytics" />
+  <project name="columnar-ui-v1" revision="phoenix" dest-branch="phoenix" groups="notdefault,build,enterprise,analytics" />
 
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
