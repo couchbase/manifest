@@ -22,12 +22,12 @@
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
   <project name="build" path="cbbuild" revision="ba76b34e3a349a3281804c9b97ee0706d8893c36" upstream="master" dest-branch="master" groups="notdefault,build">
-    <annotation name="VERSION" value="2.1.0"     keep="true"/>
+    <annotation name="VERSION" value="2.1.1"     keep="true"/>
     <annotation name="SERVER_VERSION" value="7.9.1"     keep="true"/>
     <annotation name="SERVER_BLD_NUM" value="8.0.0-3439"     keep="true"/>
     <annotation name="SERVER_RELEASE" value="phoenix"     keep="true"/>
     <annotation name="COLUMNAR" value="true"     keep="true"/>
-    <annotation name="COLUMNAR_COMPAT_VERSION" value="2.1.0"/>
+    <annotation name="COLUMNAR_COMPAT_VERSION" value="2.1.1"/>
     <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0"/>
     <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="1.1.1"/>
   </project>
