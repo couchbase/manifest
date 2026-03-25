@@ -5,7 +5,6 @@
             "interval": 240,
             "restricted": false,
             "start_build": 100,
-            "trigger_blackduck": true,
             "jenkins_job": "couchbase-k8s-microservice-build",
             "keep_git": true
         }
