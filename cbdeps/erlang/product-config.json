@@ -15,7 +15,7 @@
                         "linux:aarch64",
                         "macos",
                         "macos:arm64",
-                        "windows_msvc2019:erlang" ]
+                        "windows_msvc2022" ]
         },
         "cbdeps/erlang/27.3.xml": {
             "production": true,
