@@ -16,6 +16,7 @@
   <project name="cbft"/>
   <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise"/>
+  <project name="js-evaluator" path="goproj/src/github.com/couchbase/js-evaluator" remote="couchbase-priv" revision="main" groups="notdefault,enterprise"/>
   <project name="cbgt"/>
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary"/>
   <project name="couchbase-cli" groups="kv"/>
