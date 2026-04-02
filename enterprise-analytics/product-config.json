@@ -35,7 +35,6 @@
             "interval": 240,
             "keep_git": true,
             "jenkins_job": "couchbase-columnar-build",
-            "do-build": false,
             "approval_ticket": "MB-67780"
         }
     }
