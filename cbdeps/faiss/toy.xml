@@ -18,5 +18,6 @@
     <annotation name="VERSION" value="1.13.2" keep="true"/>
     <annotation name="OPENBLAS_VERSION" value="0.3.28-1" keep="true"/>
     <annotation name="LLVM_OPENMP_VERSION" value="16.0.4" keep="true"/>
+    <annotation name="CUDA_COMPLETE_VERSION" value="12.9.1_575.57.08" keep="true"/>
   </project>
 </manifest>
