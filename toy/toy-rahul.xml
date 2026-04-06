@@ -15,6 +15,7 @@
   <project name="cbft"/>
   <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise"/>
+  <project name="js-evaluator" path="goproj/src/github.com/couchbase/js-evaluator" remote="couchbase-priv" revision="main" groups="notdefault,enterprise"/>
   <project name="cbgt"/>
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl"/>
   <project name="couchbase-cli" groups="kv"/>
@@ -34,7 +35,7 @@
   <project name="eventing"    path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="kv_engine" groups="kv,bsl"/>
-  <project name="libcouchbase" revision="refs/tags/3.3.16"/>
+  <project name="libcouchbase" revision="c5480c4e3c66603326b703e95864c9bf87e6c151"/>
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="fusion" revision="main" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="ns_server" groups="bsl"/>
@@ -69,7 +70,10 @@
   <project name="cbas-ui" revision="morpheus" groups="notdefault,enterprise,analytics"/>
 
   <!-- Third-party projects -->
-  <project name="bleve"              remote="blevesearch"   revision="cq"   path="godeps/src/github.com/blevesearch/bleve"/>
+  <project name="bleve"              remote="blevesearch"   revision="gpu"             path="godeps/src/github.com/blevesearch/bleve"/>
+  <project name="bleve_index_api"    remote="blevesearch"   revision="gpu"             path="godeps/src/github.com/blevesearch/bleve_index_api"/>
+  <project name="zapx"               remote="blevesearch"   revision="pre_gpu"         path="godeps/src/github.com/blevesearch/zapx"/>
+  <project name="go-faiss"           remote="blevesearch"   revision="load-balancer"   path="godeps/src/github.com/blevesearch/go-faiss"/>
 
   <!-- Go support libraries - Couchbase-supported -->
   <!-- Some are in goproj to facilitate eventual move to Go modules -->
