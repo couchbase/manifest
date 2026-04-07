@@ -43,7 +43,7 @@
   <project name="product-texts"/>
   <project name="query-ee" revision="morpheus" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="query" revision="morpheus" path="goproj/src/github.com/couchbase/query" groups="bsl"/>
-  <project name="query-ui" groups="bsl"/>
+  <project name="query-ui" revision="morpheus" groups="bsl"/>
   <project name="regulator" revision="main" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="sigar" revision="morpheus" groups="kv"/>
   <project name="subjson" revision="morpheus" groups="bsl,kv"/>
