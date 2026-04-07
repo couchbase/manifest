@@ -8,7 +8,7 @@
             "jenkins_job": "cbdeps-build",
             "jenkins_job_parameters": {
                 "AUTO_PUBLISH": true,
-                "PROFILES": "-generic -avx2 -avx2-cuda-gpu"
+                "PROFILES": "-generic -avx2 -avx2-gpu"
             },
             "platforms": [ "linux",
                         "linux:aarch64",
@@ -47,7 +47,7 @@
             "jenkins_job": "cbdeps-build",
             "jenkins_job_parameters": {
                 "AUTO_PUBLISH": true,
-                "PROFILES": "-generic -avx2 -avx2-cuda-gpu"
+                "PROFILES": "-generic -avx2 -avx2-gpu"
             },
             "platforms": [ "linux",
                         "linux:aarch64",
