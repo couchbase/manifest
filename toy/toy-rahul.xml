@@ -39,7 +39,7 @@
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="fusion" revision="main" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="ns_server" groups="bsl"/>
-  <project name="server-ui" remote="couchbase-priv" revision="main" groups="notdefault,enterprise"/>
+  <project name="server-ui" remote="couchbase-priv" revision="MB-69267_gpu" groups="notdefault,enterprise"/>
   <project name="vbmap"/>
   <project name="phosphor" groups="bsl,kv"/>
   <project name="platform" groups="bsl,kv"/>
