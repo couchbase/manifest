@@ -69,10 +69,9 @@
   <project name="cbas-ui" revision="morpheus" groups="notdefault,enterprise,analytics"/>
 
   <!-- Third-party projects -->
-  <project name="bleve"              remote="blevesearch"   revision="gpu"             path="godeps/src/github.com/blevesearch/bleve"/>
-  <project name="bleve_index_api"    remote="blevesearch"   revision="gpu"             path="godeps/src/github.com/blevesearch/bleve_index_api"/>
-  <project name="zapx"               remote="blevesearch"   revision="pre_gpu"         path="godeps/src/github.com/blevesearch/zapx"/>
-  <project name="go-faiss"           remote="blevesearch"   revision="load-balancer"   path="godeps/src/github.com/blevesearch/go-faiss"/>
+  <project name="bleve"              remote="blevesearch"   revision="gpu"                path="godeps/src/github.com/blevesearch/bleve"/>
+  <project name="zapx"               remote="blevesearch"   revision="master-gpu"         path="godeps/src/github.com/blevesearch/zapx"/>
+  <project name="go-faiss"           remote="blevesearch"   revision="tempLimit"          path="godeps/src/github.com/blevesearch/go-faiss"/>
 
   <!-- Go support libraries - Couchbase-supported -->
   <!-- Some are in goproj to facilitate eventual move to Go modules -->
