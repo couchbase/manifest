@@ -6,6 +6,9 @@
             "start_build": 1,
             "jenkins_server": "server.jenkins.couchbase.com",
             "jenkins_job": "cbdeps-build",
+            "jenkins_job_parameters": {
+                "SERVER_RELEASE": "master"
+            },
             "platforms": [ "linux",
                            "linux:aarch64",
                            "macos",
