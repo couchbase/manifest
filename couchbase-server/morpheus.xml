@@ -37,7 +37,7 @@
   <project name="libcouchbase" revision="c5480c4e3c66603326b703e95864c9bf87e6c151"/>
   <project name="magma" revision="morpheus" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="ns_server" revision="morpheus" groups="bsl"/>
-  <project name="vbmap"/>
+  <project name="vbmap" revision="5fde1efec33838bc0b9a1b08b233b4b423101d99"/>
   <project name="phosphor" revision="morpheus" groups="bsl,kv"/>
   <project name="platform" revision="morpheus" groups="bsl,kv"/>
   <project name="product-texts"/>
