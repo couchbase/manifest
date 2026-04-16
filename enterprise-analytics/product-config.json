@@ -24,7 +24,7 @@
             "keep_git": true,
             "jenkins_job": "couchbase-columnar-build",
             "restricted": true,
-            "do-build": false,
+            "do-build": true,
             "approval_ticket": "MB-71466"
         },
         "enterprise-analytics/lumina.xml": {
