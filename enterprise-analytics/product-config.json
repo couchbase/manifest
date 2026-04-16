@@ -15,7 +15,7 @@
         },
         "enterprise-analytics/phoenix.xml": {
             "release": "phoenix",
-            "release_name": "Phoenix (2.1.1)",
+            "release_name": "Phoenix (2.1.1-MP1)",
             "parent": "enterprise-analytics/lumina.xml",
             "production": true,
             "start_build": 1450,
@@ -25,7 +25,7 @@
             "jenkins_job": "couchbase-columnar-build",
             "restricted": true,
             "do-build": false,
-            "approval_ticket": "MB-71057"
+            "approval_ticket": "MB-71466"
         },
         "enterprise-analytics/lumina.xml": {
             "release": "lumina",
