@@ -31,7 +31,7 @@
         },
         "couchbase-server/morpheus/8.0.1.xml": {
             "release": "morpheus",
-            "release_name": "Morpheus (8.0.1)",
+            "release_name": "Morpheus (8.0.1-MP1)",
             "parent": "couchbase-server/morpheus.xml",
             "production": true,
             "start_build": 4500,
@@ -39,7 +39,7 @@
             "interval": 117,
             "keep_git": true,
             "restricted": true,
-            "approval_ticket": "MB-68285"
+            "approval_ticket": "MB-71537"
         },
         "couchbase-server/morpheus/8.0.0.xml": {
             "release": "morpheus",
@@ -80,7 +80,7 @@
         },
         "couchbase-server/trinity/7.6.11.xml": {
             "release": "trinity",
-            "release_name": "Trinity (7.6.11)",
+            "release_name": "Trinity (7.6.11-MP1)",
             "parent": "couchbase-server/trinity.xml",
             "production": true,
             "start_build": 8400,
@@ -88,7 +88,7 @@
             "interval": 123,
             "keep_git": true,
             "restricted": true,
-            "approval_ticket": "MB-69962"
+            "approval_ticket": "MB-71551"
         },
         "couchbase-server/trinity/7.6.10.xml": {
             "release": "trinity",
