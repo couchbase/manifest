@@ -34,16 +34,16 @@
   <project name="eventing"    path="goproj/src/github.com/couchbase/eventing" revision="morpheus" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="morpheus" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="kv_engine" revision="morpheus" groups="kv,bsl"/>
-  <project name="libcouchbase" revision="refs/tags/3.3.18"/>
+  <project name="libcouchbase" revision="c5480c4e3c66603326b703e95864c9bf87e6c151"/>
   <project name="magma" revision="morpheus" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="ns_server" revision="morpheus" groups="bsl"/>
-  <project name="vbmap"/>
+  <project name="vbmap" revision="5fde1efec33838bc0b9a1b08b233b4b423101d99"/>
   <project name="phosphor" revision="morpheus" groups="bsl,kv"/>
   <project name="platform" revision="morpheus" groups="bsl,kv"/>
   <project name="product-texts"/>
   <project name="query-ee" revision="morpheus" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="query" revision="morpheus" path="goproj/src/github.com/couchbase/query" groups="bsl"/>
-  <project name="query-ui" groups="bsl"/>
+  <project name="query-ui" revision="morpheus" groups="bsl"/>
   <project name="regulator" revision="main" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="sigar" revision="morpheus" groups="kv"/>
   <project name="subjson" revision="morpheus" groups="bsl,kv"/>
@@ -67,7 +67,7 @@
   <project name="cbas-ui" revision="morpheus" groups="notdefault,enterprise,analytics"/>
 
   <!-- Third-party projects -->
-  <project name="bleve"              remote="blevesearch"   revision="mergeBug801"   path="godeps/src/github.com/blevesearch/bleve"/>
+  <project name="bleve"              remote="blevesearch"   revision="delete"   path="godeps/src/github.com/blevesearch/bleve"/>
 
   <!-- Go support libraries - Couchbase-supported -->
   <!-- Some are in goproj to facilitate eventual move to Go modules -->
