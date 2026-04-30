@@ -19,6 +19,6 @@
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" remote="couchbase" revision="dee6c7d470e9a21e350a65bda8374d2ba9bc00a6">
-    <annotation name="VERSION" value="1.5.1" keep="true"/>
+    <annotation name="VERSION" value="1.6.0" keep="true"/>
   </project>
 </manifest>
