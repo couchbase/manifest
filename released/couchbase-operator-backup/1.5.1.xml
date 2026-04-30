@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" />
+  
+  <default remote="couchbaselabs-priv" revision="master" />
+  
+  <project name="build" path="cbbuild" remote="couchbase" revision="dee6c7d470e9a21e350a65bda8374d2ba9bc00a6">
+    <annotation name="RELEASE" value="1.5.1" />
+    <annotation name="PRODUCT" value="couchbase-operator-backup" />
+    <annotation name="BLD_NUM" value="107" />
+    <annotation name="VERSION" value="1.5.1" />
+  </project>
+  <project name="couchbase-operator-backup" revision="ba135b19474c644834efc0ceed3e6c5970263def" upstream="master" dest-branch="master" />
+  <project name="product-texts" remote="couchbase" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96" upstream="master" dest-branch="master" />
+</manifest>
