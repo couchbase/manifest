@@ -24,18 +24,6 @@
             "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
             "jenkins_job": "couchbase-lite-java"
         },
-        "couchbase-lite-java/3.3.xml": {
-            "release_name": "Couchbase Lite Java - v3.3",
-            "production": true,
-            "interval": 90,
-            "restricted": false,
-            "start_build": 1,
-            "keep_git": true,
-            "trigger_blackduck": true,
-            "do-build": true,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
-            "jenkins_job": "couchbase-lite-java"
-        },
         "couchbase-lite-java/3.2.xml": {
             "release_name": "Couchbase Lite Java v3.2",
             "production": true,
