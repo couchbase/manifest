@@ -1,35 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org"/>
-  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org"/>
   <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org"/>
 
-  <default remote="couchbase" revision="android/release/3.3"/>
+  <default remote="couchbase" revision="release/3.3"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" groups="notdefault" revision="fa5df77677945a629aeb82aeaa3d43218df2a88d">
-    <!--
-    Before releasing versions with this manifest, you probably want to update master.xml
-    to make sure it isn't also creating 3.3 builds.
-    -->
     <annotation name="VERSION" value="3.3.3" keep="true"/>
   </project>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned Java-language repositories         -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project remote="couchbaselabs-priv" name="couchbase-lite-java-ee-root" path="cbl-java"/>
-  <project remote="couchbaselabs" name="couchbase-lite-java-tools" path="cbl-java/etc" revision="ff53c0aacba18c449a9e934f28cc2bd525b80536"/>
-  <project name="couchbase-lite-java-common" path="cbl-java/common" revision="91adb58a3bdd442dcc69aa275168f3b878e93e1d"/>
-  <project name="couchbase-lite-java-ce" path="cbl-java/ce" revision="3ecae914761ec7474b4df0f9f6fc4a5694e23570"/>
-
-  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <!-- Couchbase-owned Couchbase Lite Core Tools          -->
-  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project remote="couchbaselabs" name="litecore-download-script" path="cbl-java/core_tools" revision="a71a5a9f2bb808cb2c45a82fe39fd5d4c43e5597"/>
-
+  <project remote="couchbaselabs-priv" name="couchbase-lite-java-ee-root" path="cbl-java" sync-s="true"/>
+ 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase Licensing and Legal                      -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->

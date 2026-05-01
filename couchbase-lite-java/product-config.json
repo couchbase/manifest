@@ -1,7 +1,7 @@
 {
     "manifests": {
         "couchbase-lite-java/master.xml": {
-            "release_name": "Couchbase Lite Java - v4.1",
+            "release_name": "Couchbase Lite Java - master",
             "production": true,
             "interval": 90,
             "restricted": false,
@@ -9,7 +9,6 @@
             "keep_git": true,
             "trigger_blackduck": true,
             "do-build": true,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
             "jenkins_job": "couchbase-lite-java"
         },
         "couchbase-lite-java/4.0.xml": {
@@ -21,7 +20,6 @@
             "keep_git": true,
             "trigger_blackduck": true,
             "do-build": true,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
             "jenkins_job": "couchbase-lite-java"
         },
         "couchbase-lite-java/3.2.xml": {
@@ -33,7 +31,6 @@
             "keep_git": true,
             "trigger_blackduck": true,
             "do-build": true,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
             "jenkins_job": "couchbase-lite-java"
         },
         "couchbase-lite-java/3.1.xml": {

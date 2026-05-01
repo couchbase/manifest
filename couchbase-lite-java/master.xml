@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org"/>
-  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org"/>
   <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org"/>
 
   <default remote="couchbase" revision="master"/>
@@ -16,16 +15,8 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned Java-language repositories         -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project remote="couchbaselabs-priv" name="couchbase-lite-java-ee-root" path="cbl-java"/>
-  <project remote="couchbaselabs" name="couchbase-lite-java-tools" path="cbl-java/etc" revision="3be3159a7f7eb0379d1dc988bc515aaf4b85f060"/>
-  <project name="couchbase-lite-java-common" path="cbl-java/common" revision="dfd1630127b40a9a704d533667fb801bd21bcaf5"/>
-  <project name="couchbase-lite-java-ce" path="cbl-java/ce" revision="2eddbf2ae3c91d6179ab4ed02e32d2f8e27a25eb"/>
-
-  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <!-- Couchbase-owned Couchbase Lite Core Tools          -->
-  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project remote="couchbaselabs" name="litecore-download-script" path="cbl-java/core_tools" revision="a71a5a9f2bb808cb2c45a82fe39fd5d4c43e5597"/>
-
+  <project remote="couchbaselabs-priv" name="couchbase-lite-java-ee-root" path="cbl-java" sync-s="true"/>
+ 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase Licensing and Legal                      -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
