@@ -1,0 +1,22 @@
+{
+  "manifests": {
+    "couchbase-lite-react-native/main.xml": {
+      "release_name": "Couchbase Lite React Native - main branch",
+      "production": true,
+      "interval": 240,
+      "restricted": false,
+      "start_build": 1,
+      "trigger_blackduck": true,
+      "keep_git": true
+    },
+    "couchbase-lite-react-native/1.0.xml": {
+      "release_name": "Couchbase Lite React Native - 1.0.x",
+      "production": true,
+      "interval": 240,
+      "restricted": false,
+      "start_build": 1,
+      "trigger_blackduck": true,
+      "keep_git": true
+    }
+  }
+}
