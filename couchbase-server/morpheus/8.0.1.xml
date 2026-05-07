@@ -12,8 +12,8 @@
   <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise" revision="983714b2982e1e493e547acbca63790941897464"/>
   <project name="bhive" path="goproj/src/github.com/couchbase/bhive" remote="couchbase-priv" revision="9f0fa178952fa3291589c355a541f4131f325732" groups="notdefault,enterprise"/>
   <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise" revision="44f4aebb05a1fbf50d441831ff77d7ec752b289e"/>
-  <project name="cbft" revision="0ec786e6a5a393cd77bd499b5c589772d0b48013"/>
-  <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise" revision="269c1d9da11b5a346726f93ef0aaca66c56d9062"/>
+  <project name="cbft" revision="6a269c9f57edb49234b679ee317c4f823874914a"/>
+  <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise" revision="4562e74318129e1482771cc42075662606237303"/>
   <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise" revision="c57616b187889a5318688f49817ccaceb9c098b9"/>
   <project name="cbgt" revision="cb32312a2741cb61b96cbffecce046eb02f55358"/>
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl" revision="4b185fb7d5f0e136755756b8cc3029ec64d51639"/>
@@ -42,7 +42,7 @@
   <project name="platform" revision="31a94f3d539f0759c1d08597bcfea31516f996e3" groups="bsl,kv"/>
   <project name="product-texts" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96"/>
   <project name="query-ee" revision="faa99dc7406f1ead693de58e61beb006ada6cb36" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
-  <project name="query" revision="1c37f5af4e2d7e5c72471ce9cdcd94b2496e4b66" path="goproj/src/github.com/couchbase/query" groups="bsl"/>
+  <project name="query" revision="8.0.1" path="goproj/src/github.com/couchbase/query" groups="bsl"/>
   <project name="query-ui" groups="bsl" revision="6f58f98c59557d13fc3bafdd440bd5456a7ca883"/>
   <project name="regulator" revision="54ca6af1f3f0fd83fb684417b23c6741a81d31c0" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="sigar" revision="b1718d5c99a2bd37d97fe2c96eb0fd33a06461af" groups="kv"/>
@@ -70,7 +70,7 @@
 
   <!-- Go support libraries - Couchbase-supported -->
   <!-- Some are in goproj to facilitate eventual move to Go modules -->
-  <project name="n1fty" revision="64c09aa321603df0bf1b5404de5b9a66e30cf4e2" path="goproj/src/github.com/couchbase/n1fty" groups="bsl"/>
+  <project name="n1fty" revision="48d0508d8d336f06759eedeb76b13e6a64d22921" path="goproj/src/github.com/couchbase/n1fty" groups="bsl"/>
   <project name="go_json" revision="4641f4ef857826a06f48e5064ff556b3744c07fd" path="goproj/src/github.com/couchbase/go_json"/>
   <project name="gomemcached" revision="ffae62959cd28220e0b2f914fa8c045647d89a8e" path="goproj/src/github.com/couchbase/gomemcached" groups="backup"/>
   <project name="cbauth" revision="0338360b4d7c8917a872d3406700d46dae2d817c" path="goproj/src/github.com/couchbase/cbauth" groups="backup"/>
