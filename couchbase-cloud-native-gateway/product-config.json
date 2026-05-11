@@ -6,6 +6,7 @@
             "interval": 240,
             "restricted": false,
             "start_build": 123,
+            "trigger_blackduck": true,
             "jenkins_job": "couchbase-k8s-microservice-build",
             "keep_git": true
         },
@@ -15,6 +16,7 @@
             "interval": 240,
             "restricted": false,
             "start_build": 123,
+            "trigger_blackduck": true,
             "jenkins_job": "couchbase-k8s-microservice-build",
             "keep_git": true
         }
