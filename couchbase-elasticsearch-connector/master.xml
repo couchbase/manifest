@@ -13,6 +13,6 @@
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" revision="f2a16b53bb74146f20d18ba2c0443d5f10a9a550">
-    <annotation name="VERSION" value="4.4.15" keep="true"/>
+    <annotation name="VERSION" value="4.4.16" keep="true"/>
   </project>
 </manifest>
