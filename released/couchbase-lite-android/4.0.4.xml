@@ -1,0 +1,15 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/" review="review.couchbase.org" />
+  
+  <default remote="couchbase" revision="release/4.0" />
+  
+  <project name="build" path="cbbuild" revision="fa5df77677945a629aeb82aeaa3d43218df2a88d" groups="notdefault">
+    <annotation name="RELEASE" value="4.0.4" />
+    <annotation name="PRODUCT" value="couchbase-lite-android" />
+    <annotation name="BLD_NUM" value="8" />
+    <annotation name="VERSION" value="4.0.4" />
+  </project>
+  <project name="couchbase-lite-java-ee-root" path="cbl-java" remote="couchbaselabs-priv" revision="703be09e29290f6f85b9e7384f64e32c90ba8ed6" upstream="release/4.0" dest-branch="release/4.0" sync-s="true" />
+  <project name="product-texts" path="cbl-java/legal" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96" upstream="master" dest-branch="master" />
+</manifest>
