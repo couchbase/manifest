@@ -27,8 +27,8 @@
   <extend-project name="voltron" revision="a99da6a9ae710bf48d186bc9b5722a58bf5d885c"/>
   <extend-project name="tlm" revision="8757716132bcbb908c2e81f15f0fb1ca8f79c597"/>
 
-  <!-- MB-71811: pick up ns_server fork w/ fix for testing -->
-  <extend-project name="ns_server" remote="mblow" revision="MB-71811" />
+  <!-- MB-71811: pick up ns_server fork w/ fix -->
+  <extend-project name="ns_server" remote="mblow" revision="lumina" />
 
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
