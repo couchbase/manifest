@@ -38,7 +38,7 @@
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="fusion" revision="main" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="ns_server" groups="bsl"/>
-  <project name="server-ui" remote="couchbase-priv" revision="MB-69267_gpu" groups="notdefault,enterprise"/>
+  <project name="server-ui" remote="couchbase-priv" revision="main" groups="notdefault,enterprise"/>
   <project name="vbmap"/>
   <project name="phosphor" groups="bsl,kv"/>
   <project name="platform" groups="bsl,kv"/>
@@ -69,9 +69,7 @@
   <project name="cbas-ui" revision="morpheus" groups="notdefault,enterprise,analytics"/>
 
   <!-- Third-party projects -->
-  <project name="bleve"              remote="blevesearch"   revision="gpu"                path="godeps/src/github.com/blevesearch/bleve"/>
-  <project name="zapx"               remote="blevesearch"   revision="master-gpu"         path="godeps/src/github.com/blevesearch/zapx"/>
-  <project name="go-faiss"           remote="blevesearch"   revision="tempLimit"          path="godeps/src/github.com/blevesearch/go-faiss"/>
+  <project name="bleve"              remote="blevesearch"   revision="blas"                path="godeps/src/github.com/blevesearch/bleve"/>
 
   <!-- Go support libraries - Couchbase-supported -->
   <!-- Some are in goproj to facilitate eventual move to Go modules -->
