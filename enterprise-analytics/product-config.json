@@ -38,6 +38,19 @@
             "jenkins_job": "couchbase-columnar-build",
             "restricted": true,
             "approval_ticket": "MB-67780"
+        },
+        "enterprise-analytics/helios.xml": {
+            "release": "helios",
+            "release_name": "Helios (2.3.0)",
+            "production": true,
+            "start_build": 1000,
+            "trigger_blackduck": true,
+            "interval": 240,
+            "keep_git": true,
+            "jenkins_job": "couchbase-columnar-build",
+            "restricted": false,
+            "do-build": false,
+            "approval_ticket": "MB-72186"
         }
     }
 }

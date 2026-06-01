@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- temporarily, extend the lumina manifest -->
   <include name="enterprise-analytics/lumina.xml"/>
 
   <!-- Pick up Analytics projects from master & phoenix branches -->
