@@ -13,11 +13,16 @@
   -->
 
   <!-- Update build project to provide different annotations -->
-  <extend-project name="build">
+  <remove-project name="build"/>
+  <project name="build" path="cbbuild" revision="" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="VERSION" value="2.3.0"     keep="true"/>
+    <annotation name="SERVER_VERSION" value="8.0.1"     keep="true"/>
+    <annotation name="SERVER_BLD_NUM" value="8.0.1-4795"     keep="true"/>
+    <annotation name="SERVER_RELEASE" value="morpheus"     keep="true"/>
+    <annotation name="COLUMNAR" value="true"     keep="true"/>
     <annotation name="COLUMNAR_COMPAT_VERSION" value="2.3.0"/>
     <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0"/>
     <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="2.1.0"/>
-  </extend-project>
+  </project>
 
 </manifest>
