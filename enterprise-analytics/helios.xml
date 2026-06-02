@@ -4,12 +4,13 @@
   <!-- temporarily, extend the lumina manifest -->
   <include name="enterprise-analytics/lumina.xml"/>
 
-  <!-- Pick up Analytics projects from master & phoenix branches -->
+  <!-- Pick up Analytics projects from master branches - ->
   <extend-project name="cbas-core" revision="master" dest-branch="master" />
   <extend-project name="asterixdb" revision="master" dest-branch="master" />
   <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
   <extend-project name="cbas" revision="master" dest-branch="master" />
   <extend-project name="cbas-ui" revision="master" dest-branch="master" />
+  -->
 
   <!-- Update build project to provide different annotations -->
   <extend-project name="build">
