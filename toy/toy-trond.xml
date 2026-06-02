@@ -49,7 +49,7 @@
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
   <project name="hebrew" remote="couchbase-priv" revision="c57616b187889a5318688f49817ccaceb9c098b9" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="7b2d8bf967a74ae91f30773b83fef222796c0297" upstream="master" dest-branch="unstable" groups="bsl" />
-  <project name="kv_engine" revision="adf7b49eb1fce3129c521b6c0aa270aad654e5fe" upstream="master" dest-branch="master" groups="kv,bsl" />
+  <project name="kv_engine" revision="2ab7f8876d8798f94ab6134d0b2893bbf29b99de" upstream="master" dest-branch="master" groups="kv,bsl" />
   <project name="libcouchbase" revision="5c05e44af1424591b223fb06a4cb007ea381923f" upstream="refs/tags/3.3.16" dest-branch="refs/tags/3.3.16" />
   <project name="magma" remote="couchbase-priv" revision="f2af6a7e992099528f2e596e82bed4657f4669f6" upstream="master" dest-branch="master" groups="notdefault,enterprise,kv_ee" />
   <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="69ba98e7a21fa18f5cc650aeb7d96849e5062e83" upstream="master" dest-branch="master" groups="bsl" />
