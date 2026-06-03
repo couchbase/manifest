@@ -24,6 +24,7 @@
   <!-- Future release-specific git branches, if necessary, should be made from cb-master. -->
   <project name="forestdb" revision="cb-master" groups="backup"/>
   <project name="geocouch"/>
+  <project name="gocoverage" revision="main"/>
   <project name="goxdcr" revision="trinity" path="goproj/src/github.com/couchbase/goxdcr" groups="bsl"/>
   <project name="gometa"    revision="trinity" path="goproj/src/github.com/couchbase/gometa"/>
   <project name="nitro"     revision="trinity" path="goproj/src/github.com/couchbase/nitro" groups="bsl"/>
