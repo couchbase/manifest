@@ -10,6 +10,16 @@
             "trigger_blackduck": true,
             "do-build": true
         },
+        "couchbase-lite-net/4.1.xml": {
+            "release_name": "Couchbase Lite Net - 4.1",
+            "production": true,
+            "interval": 120,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "trigger_blackduck": true,
+            "do-build": false
+        },
         "couchbase-lite-net/4.0.xml": {
             "release_name": "Couchbase Lite Net - 4.0",
             "production": true,
@@ -18,7 +28,17 @@
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true
+            "do-build": false
+        },
+        "couchbase-lite-net/3.4.xml": {
+            "release_name": "Couchbase Lite Net - 3.4",
+            "production": true,
+            "interval": 120,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "trigger_blackduck": true,
+            "do-build": false
         },
         "couchbase-lite-net/3.2.xml": {
             "release_name": "Couchbase Lite Net - 3.2",
@@ -45,33 +65,33 @@
             ]
         },
         "couchbase-lite-net/helium/3.1.3-vf002.xml": {
-             "release_name": "Couchbase Lite Net - 3.1.3vf002",
-             "production": true,
-             "interval": 1440,
-             "restricted": false,
-             "start_build": 1,
-             "keep_git": true,
-             "trigger_blackduck": false,
-             "do-build": false,
-             "module_projects": [
+            "release_name": "Couchbase Lite Net - 3.1.3vf002",
+            "production": true,
+            "interval": 1440,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "trigger_blackduck": false,
+            "do-build": false,
+            "module_projects": [
                 "couchbase-lite-net-ee",
                 "couchbase-lite-net"
             ]
-         },
-         "couchbase-lite-net/helium/3.1.3-vf001.xml": {
-             "release_name": "Couchbase Lite Net - 3.1.3vf001",
-             "production": true,
-             "interval": 1440,
-             "restricted": false,
-             "start_build": 1,
-             "keep_git": true,
-             "trigger_blackduck": false,
-             "do-build": false,
-             "module_projects": [
+        },
+        "couchbase-lite-net/helium/3.1.3-vf001.xml": {
+            "release_name": "Couchbase Lite Net - 3.1.3vf001",
+            "production": true,
+            "interval": 1440,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "trigger_blackduck": false,
+            "do-build": false,
+            "module_projects": [
                 "couchbase-lite-net-ee",
                 "couchbase-lite-net"
-             ]
-         },
+            ]
+        },
         "couchbase-lite-net/lithium.xml": {
             "release_name": "Couchbase Lite Net - Lithium",
             "production": true,
@@ -146,19 +166,19 @@
             ]
         },
         "couchbase-lite-net/2.7.0/2.7.0.1.xml": {
-             "release": "2.7.0.1",
-             "release_name": "Couchbase Lite Net - 2.7.0 MP1",
-             "production": true,
-             "interval": 1440,
-             "restricted": false,
-             "start_build": 1,
-             "keep_git": true,
-             "do-build": false,
-             "module_projects": [
-                 "couchbase-lite-net-ee",
-                 "couchbase-lite-net"
-             ]
-         },
+            "release": "2.7.0.1",
+            "release_name": "Couchbase Lite Net - 2.7.0 MP1",
+            "production": true,
+            "interval": 1440,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "do-build": false,
+            "module_projects": [
+                "couchbase-lite-net-ee",
+                "couchbase-lite-net"
+            ]
+        },
         "couchbase-lite-net/cobalt.xml": {
             "release": "2.6.4",
             "release_name": "Couchbase Lite Net - Cobalt",
