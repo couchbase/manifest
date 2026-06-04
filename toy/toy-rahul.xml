@@ -70,6 +70,7 @@
 
   <!-- Third-party projects -->
   <project name="go-faiss"               remote="blevesearch"   revision="gpuToy"                path="godeps/src/github.com/blevesearch/go-faiss"/>
+  <project name="zapx"                   remote="blevesearch"   revision="gpuToy"                path="godeps/src/github.com/blevesearch/zapx"/>
 
   <!-- Go support libraries - Couchbase-supported -->
   <!-- Some are in goproj to facilitate eventual move to Go modules -->
