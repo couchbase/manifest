@@ -69,7 +69,7 @@
   <project name="cbas-ui" revision="morpheus" groups="notdefault,enterprise,analytics"/>
 
   <!-- Third-party projects -->
-  <project name="zapx"               remote="blevesearch"   revision="cpuBatch"                path="godeps/src/github.com/blevesearch/zapx"/>
+  <project name="go-faiss"               remote="blevesearch"   revision="gpuToy"                path="godeps/src/github.com/blevesearch/go-faiss"/>
 
   <!-- Go support libraries - Couchbase-supported -->
   <!-- Some are in goproj to facilitate eventual move to Go modules -->
