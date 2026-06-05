@@ -3,47 +3,67 @@
         "couchbase-lite-ios/master.xml": {
             "release_name": "Couchbase Lite iOS - master branch",
             "production": true,
-            "interval": 90,
+            "interval": 120,
             "restricted": false,
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
             "do-build": true
+        },
+        "couchbase-lite-ios/4.1.xml": {
+            "release_name": "Couchbase Lite iOS - 4.1",
+            "production": true,
+            "interval": 120,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "trigger_blackduck": true,
+            "do-build": false
         },
         "couchbase-lite-ios/4.0.xml": {
             "release_name": "Couchbase Lite iOS - 4.0",
             "production": true,
-            "interval": 240,
+            "interval": 120,
             "restricted": false,
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true
+            "do-build": false
+        },
+        "couchbase-lite-ios/3.4.xml": {
+            "release_name": "Couchbase Lite iOS - 3.4",
+            "production": true,
+            "interval": 120,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "trigger_blackduck": true,
+            "do-build": false
         },
         "couchbase-lite-ios/3.3.xml": {
             "release_name": "Couchbase Lite iOS - 3.3",
             "production": true,
-            "interval": 240,
+            "interval": 120,
             "restricted": false,
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true
+            "do-build": false
         },
         "couchbase-lite-ios/3.2.xml": {
             "release_name": "Couchbase Lite iOS - 3.2",
             "production": true,
-            "interval": 240,
+            "interval": 120,
             "restricted": false,
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true
+            "do-build": false
         },
         "couchbase-lite-ios/helium.xml": {
             "release_name": "Couchbase Lite iOS - Helium",
             "production": true,
-            "interval": 240,
+            "interval": 1440,
             "restricted": false,
             "start_build": 1,
             "keep_git": true,
@@ -62,7 +82,7 @@
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true,
+            "do-build": false,
             "module_projects": [
                 "couchbase-lite-ios-ee",
                 "couchbase-lite-ios"
