@@ -9,6 +9,24 @@
              "keep_git": true,
              "trigger_blackduck": true
          },
+         "couchbase-lite-core/4.1.xml": {
+             "release_name": "Couchbase Lite Core - release/4.1",
+             "production": true,
+             "interval": 120,
+             "restricted": false,
+             "start_build": 1,
+             "keep_git": true,
+             "trigger_blackduck": true
+         },
+         "couchbase-lite-core/3.4.xml": {
+             "release_name": "Couchbase Lite Core - release/3.4",
+             "production": true,
+             "interval": 120,
+             "restricted": false,
+             "start_build": 1,
+             "keep_git": true,
+             "trigger_blackduck": true
+         },
          "couchbase-lite-core/4.0.xml": {
              "release_name": "Couchbase Lite Core - release/4.0",
              "production": true,
