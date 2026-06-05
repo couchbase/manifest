@@ -11,6 +11,17 @@
             "do-build": true,
             "jenkins_job": "couchbase-lite-android"
         },
+        "couchbase-lite-android/4.1.xml": {
+            "release_name": "Couchbase Lite Android - v4.1",
+            "production": true,
+            "interval": 240,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "trigger_blackduck": true,
+            "do-build": false,
+            "jenkins_job": "couchbase-lite-android"
+        },
         "couchbase-lite-android/4.0.xml": {
             "release_name": "Couchbase Lite Android - v4.0",
             "production": true,
@@ -19,7 +30,18 @@
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true,
+            "do-build": false,
+            "jenkins_job": "couchbase-lite-android"
+        },
+        "couchbase-lite-android/3.4.xml": {
+            "release_name": "Couchbase Lite Android - v3.4",
+            "production": true,
+            "interval": 240,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "trigger_blackduck": true,
+            "do-build": false,
             "jenkins_job": "couchbase-lite-android"
         },
         "couchbase-lite-android/3.3.xml": {
@@ -30,7 +52,7 @@
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true,
+            "do-build": false,
             "jenkins_job": "couchbase-lite-android"
         },
         "couchbase-lite-android/3.2.xml": {
@@ -41,7 +63,7 @@
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true,
+            "do-build": false,
             "jenkins_job": "couchbase-lite-android"
         },
         "couchbase-lite-android/3.1.xml": {
@@ -52,8 +74,11 @@
             "start_build": 1,
             "keep_git": true,
             "trigger_blackduck": true,
-            "do-build": true,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
+            "do-build": false,
+            "module_projects": [
+                "couchbase-lite-java-ee-root",
+                "product-texts"
+            ],
             "jenkins_job": "couchbase-lite-android"
         },
         "couchbase-lite-android/lithium.xml": {
@@ -65,7 +90,10 @@
             "keep_git": true,
             "trigger_blackduck": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
+            "module_projects": [
+                "couchbase-lite-java-ee-root",
+                "product-texts"
+            ],
             "jenkins_job": "couchbase-lite-android"
         },
         "couchbase-lite-android/hydrogen.xml": {
@@ -78,7 +106,10 @@
             "keep_git": true,
             "trigger_blackduck": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-java-ee-root", "product-texts" ],
+            "module_projects": [
+                "couchbase-lite-java-ee-root",
+                "product-texts"
+            ],
             "jenkins_job": "couchbase-lite-android"
         },
         "couchbase-lite-android/hydrogen/2.8.7.xml": {
@@ -91,7 +122,12 @@
             "keep_git": true,
             "trigger_blackduck": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-java-ee-root", "couchbase-lite-core", "couchbase-lite-core-EE", "product-texts" ],
+            "module_projects": [
+                "couchbase-lite-java-ee-root",
+                "couchbase-lite-core",
+                "couchbase-lite-core-EE",
+                "product-texts"
+            ],
             "jenkins_job": "couchbase-lite-android"
         },
         "couchbase-lite-android/mercury/2.7.1.2.xml": {
@@ -213,7 +249,10 @@
             "start_build": 1,
             "keep_git": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-android-ee", "couchbase-lite-android" ]
+            "module_projects": [
+                "couchbase-lite-android-ee",
+                "couchbase-lite-android"
+            ]
         },
         "couchbase-lite-android/2.5/2.5.2.1.xml": {
             "release": "2.5.2.1",
@@ -224,7 +263,10 @@
             "start_build": 1,
             "keep_git": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-android-ee", "couchbase-lite-android" ]
+            "module_projects": [
+                "couchbase-lite-android-ee",
+                "couchbase-lite-android"
+            ]
         },
         "couchbase-lite-android/2.5/2.5.2.xml": {
             "release": "2.5.2",
@@ -235,7 +277,10 @@
             "start_build": 1,
             "keep_git": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-android-ee", "couchbase-lite-android" ]
+            "module_projects": [
+                "couchbase-lite-android-ee",
+                "couchbase-lite-android"
+            ]
         },
         "couchbase-lite-android/2.5/2.5.0.1.xml": {
             "release": "2.5.0.1",
@@ -246,7 +291,10 @@
             "start_build": 1,
             "keep_git": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-android-ee", "couchbase-lite-android" ]
+            "module_projects": [
+                "couchbase-lite-android-ee",
+                "couchbase-lite-android"
+            ]
         },
         "couchbase-lite-android/2.5/2.5.0.xml": {
             "release": "2.5.0",
@@ -257,7 +305,10 @@
             "start_build": 184,
             "keep_git": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-android-ee", "couchbase-lite-android" ]
+            "module_projects": [
+                "couchbase-lite-android-ee",
+                "couchbase-lite-android"
+            ]
         },
         "couchbase-lite-android/2.1.xml": {
             "release": "2.1.5",
@@ -268,7 +319,10 @@
             "start_build": 1,
             "keep_git": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-android-ee", "couchbase-lite-android" ]
+            "module_projects": [
+                "couchbase-lite-android-ee",
+                "couchbase-lite-android"
+            ]
         },
         "couchbase-lite-android/2.1/2.1.2.xml": {
             "release": "2.1.2",
@@ -279,19 +333,25 @@
             "start_build": 1,
             "keep_git": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-android-ee", "couchbase-lite-android" ]
+            "module_projects": [
+                "couchbase-lite-android-ee",
+                "couchbase-lite-android"
+            ]
         },
         "couchbase-lite-android/2.1/2.1.0.xml": {
-             "release": "2.1.0",
-             "release_name": "Couchbase Lite Android - 2.1.0",
-             "production": true,
-             "interval": 43800,
-             "restricted": false,
-             "start_build": 1,
-             "keep_git": true,
-             "do-build": false,
-             "module_projects": [ "couchbase-lite-android-ee", "couchbase-lite-android" ]
-         },
+            "release": "2.1.0",
+            "release_name": "Couchbase Lite Android - 2.1.0",
+            "production": true,
+            "interval": 43800,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "do-build": false,
+            "module_projects": [
+                "couchbase-lite-android-ee",
+                "couchbase-lite-android"
+            ]
+        },
         "couchbase-lite-android/2.0/2.0.2.xml": {
             "release": "2.0.2",
             "release_name": "Couchbase Lite Android - 2.0.2",
@@ -301,7 +361,10 @@
             "start_build": 1,
             "keep_git": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-android-ee", "couchbase-lite-android" ]
+            "module_projects": [
+                "couchbase-lite-android-ee",
+                "couchbase-lite-android"
+            ]
         },
         "couchbase-lite-android/2.0/2.0.0.xml": {
             "release": "2.0.0",
@@ -312,8 +375,10 @@
             "start_build": 1,
             "keep_git": true,
             "do-build": false,
-            "module_projects": [ "couchbase-lite-android-ee", "couchbase-lite-android" ]
+            "module_projects": [
+                "couchbase-lite-android-ee",
+                "couchbase-lite-android"
+            ]
         }
     }
 }
-
