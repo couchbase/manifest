@@ -57,7 +57,7 @@
   <project name="ns_server" revision="02eaca2c58525c6fdf3f02379badc0415cc61d08" upstream="master" dest-branch="master" groups="bsl" />
   <project name="phosphor" revision="8f2133839d299c3cf8bb8d15fd8dcdd06b3bd508" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="6f3341aadbb951544d6020bb799803046512bc90" upstream="master" dest-branch="unstable" groups="notdefault,enterprise" />
-  <project name="platform" revision="50770d599d0c0781f4a67812555e5cbc3e77efd7" upstream="master" dest-branch="master" groups="bsl,kv" />
+  <project name="platform" revision="63f8bf549b8e3fc4d2d1bf0d75cd44a139da1fa5" upstream="master" dest-branch="master" groups="bsl,kv" />
   <project name="product-metadata" revision="b8f3e8d1a68a4d72262a517a753b4d17ceea1979" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="3045d75408333b6fd7c2209fbfd7a2e4a85b3d96" upstream="master" dest-branch="master" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="ee66c8cacc6579b2b9d4aec2b961c89a56fdfa49" upstream="master" dest-branch="master" groups="bsl" />
