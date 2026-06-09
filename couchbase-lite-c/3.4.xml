@@ -3,7 +3,7 @@
   <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org"/>
   <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org"/>
 
-  <default remote="couchbase" revision="master"/>
+  <default remote="couchbase" revision="release/3.4"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned primary repository                 -->
@@ -12,13 +12,13 @@
   <project name="couchbase-lite-c" remote="couchbase" sync-s="true">
     <copyfile src="jenkins/CMakeLists.txt" dest="CMakeLists.txt"/>
   </project>
-  <project name="couchbase-lite-c-ee" revision="main" remote="couchbase-priv" groups="notdefault,enterprise" sync-s="true"/>
+  <project name="couchbase-lite-c-ee" revision="release/3.4" remote="couchbase-priv" groups="notdefault,enterprise" sync-s="true"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="product-texts" path="product-texts" revision="master"/>
   <project name="build" path="cbbuild" revision="cf20ab9c0f7d81838212b1f2d719903ffb4a4d9e">
-    <annotation name="VERSION" value="4.2.0" keep="true"/>
+    <annotation name="VERSION" value="3.4.0" keep="true"/>
   </project>
 </manifest>

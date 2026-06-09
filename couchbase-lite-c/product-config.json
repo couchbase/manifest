@@ -7,6 +7,17 @@
         "restricted": false,
         "start_build": 1,
         "keep_git": true,
+        "do-build": true,
+        "trigger_blackduck": true
+      },
+      "couchbase-lite-c/4.1.xml": {
+        "release_name": "Couchbase Lite C - 4.1",
+        "production": true,
+        "interval": 120,
+        "restricted": false,
+        "start_build": 1,
+        "keep_git": true,
+        "do-build": false,
         "trigger_blackduck": true
       },
       "couchbase-lite-c/4.0.xml": {
@@ -16,15 +27,27 @@
         "restricted": false,
         "start_build": 1,
         "keep_git": true,
+        "do-build": false,
         "trigger_blackduck": true
       },
-      "couchbase-lite-c/3.2.xml": {
-        "release_name": "Couchbase Lite C - 3.2",
+      "couchbase-lite-c/3.4.xml": {
+        "release_name": "Couchbase Lite C - 3.4",
         "production": true,
         "interval": 120,
         "restricted": false,
         "start_build": 1,
         "keep_git": true,
+        "do-build": false,
+        "trigger_blackduck": true
+      },
+      "couchbase-lite-c/3.2.xml": {
+        "release_name": "Couchbase Lite C - 3.2",
+        "production": true,
+        "interval": 240,
+        "restricted": false,
+        "start_build": 1,
+        "keep_git": true,
+        "do-build": false,
         "trigger_blackduck": true
       },
       "couchbase-lite-c/3.1.xml": {
@@ -45,6 +68,7 @@
         "restricted": false,
         "start_build": 1,
         "keep_git": true,
+        "do-build": false,
         "trigger_blackduck": true,
         "module_projects": ["couchbase-lite-c", "couchbase-lite-c-ee"]
       }
