@@ -25,17 +25,17 @@
 
   <!-- advance select projects to enable Go & Python to be advanced ahead of 8.0.1 for CVEs -->
   <extend-project name="voltron" revision="9f4df742bb5451107ea04dfb44b391149a6994ed"/>
-  <extend-project name="tlm" revision="5b870049d62ea0dc0c6ce48420f8662f77902cc2"/>
+  <extend-project name="tlm" remote="mblow" revision="854ec55e44f7d31a9d21d5bc7a98bed9d6827ccc"/>
 
   <!-- MB-71811: pick up ns_server fork w/ fix -->
-  <extend-project name="ns_server" remote="mblow" revision="lumina" />
+  <extend-project name="ns_server" remote="mblow" revision="ef8d202e7bedbc52ef25240adeaaf392c0db1e9f" />
 
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
   <project name="build" path="cbbuild" revision="" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="VERSION" value="2.2.0"     keep="true"/>
-    <annotation name="SERVER_VERSION" value="8.0.1"     keep="true"/>
-    <annotation name="SERVER_BLD_NUM" value="8.0.1-4795"     keep="true"/>
+    <annotation name="SERVER_VERSION" value="8.0.2"     keep="true"/>
+    <annotation name="SERVER_BLD_NUM" value="8.0.2-5503"     keep="true"/>
     <annotation name="SERVER_RELEASE" value="morpheus"     keep="true"/>
     <annotation name="COLUMNAR" value="true"     keep="true"/>
     <annotation name="COLUMNAR_COMPAT_VERSION" value="2.2.0"/>
