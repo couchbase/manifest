@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- temporarily, extend the lumina manifest -->
-  <include name="enterprise-analytics/lumina.xml"/>
+  <include name="enterprise-analytics/base-manifest_helios.xml"/>
 
   <!-- Pick up Analytics projects from master branches -->
   <extend-project name="cbas-core" revision="master" dest-branch="master" />
@@ -11,12 +10,25 @@
   <extend-project name="cbas" revision="master" dest-branch="master" />
   <extend-project name="cbas-ui" revision="master" dest-branch="master" />
 
+  <!-- Add the columnar-ui project -->
+  <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" />
+
+  <!-- pick up latest product-texts so we have the most accurate README.txt & licenses -->
+  <extend-project name="product-texts" revision="master" />
+
+  <!-- pick up latest product-metadata so we have the most accurate NOTICE.txt -->
+  <extend-project name="product-metadata" revision="master" />
+
+  <!-- per ceej, we should pick up the latest golang project -->
+  <extend-project name="golang" revision="main" />
+
+
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
   <project name="build" path="cbbuild" revision="" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="VERSION" value="2.3.0"     keep="true"/>
-    <annotation name="SERVER_VERSION" value="8.0.1"     keep="true"/>
-    <annotation name="SERVER_BLD_NUM" value="8.0.1-4795"     keep="true"/>
+    <annotation name="SERVER_VERSION" value="8.0.3"     keep="true"/>
+    <annotation name="SERVER_BLD_NUM" value="8.0.3-5811"     keep="true"/>
     <annotation name="SERVER_RELEASE" value="morpheus"     keep="true"/>
     <annotation name="COLUMNAR" value="true"     keep="true"/>
     <annotation name="COLUMNAR_COMPAT_VERSION" value="2.3.0"/>
@@ -24,4 +36,29 @@
     <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="2.1.0"/>
   </project>
 
+  <remove-project name="query"/>
+  <remove-project name="query-ee"/>
+  <remove-project name="indexing"/>
+  <remove-project name="goxdcr"/>
+  <remove-project name="xdcrDiffer"/>
+  <remove-project name="gometa"/>
+  <remove-project name="cbft"/>
+  <remove-project name="cbftx"/>
+  <remove-project name="cbgt"/>
+  <remove-project name="hebrew"/>
+  <remove-project name="eventing"/>
+  <remove-project name="eventing-ee"/>
+  <remove-project name="cbbs"/>
+  <remove-project name="n1fty"/>
+  <remove-project name="bhive"/>
+  <remove-project name="plasma"/>
+  <remove-project name="gocbcrypto"/>
+  <!-- we can't remove the following at least while we have a test dependency on samples
+  <remove- project name="magma"/>
+  <remove- project name="backup"/>
+ -->
+  <remove-project name="udf-api"/>
+  <remove-project name="godbc"/>
+  <remove-project name="nitro"/>
+  <remove-project name="regulator"/>
 </manifest>
