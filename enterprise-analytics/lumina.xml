@@ -9,7 +9,7 @@
   <extend-project name="asterixdb" revision="lumina" dest-branch="lumina"/>
   <extend-project name="analytics-dcp-client" revision="ba19fe7f2247a1e746432a6efdef683262cd15d2" dest-branch="master"/>
   <extend-project name="cbas" revision="1b0d22f9f738d56062a06052e1801a496fd9502f" dest-branch="master"/>
-  <extend-project name="cbas-ui" revision="d897876e73c42d400ecba9d7a1ebd8651b2ab961" dest-branch="master"/>
+  <extend-project name="cbas-ui" revision="master" dest-branch="master"/>
 
   <!-- Add the columnar-ui project -->
   <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" revision="976967c347bb3e6116a85cc2d17487b5708e7db9"/>
