@@ -1,43 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <manifest>
-  <remote name="mblow" fetch="https://github.com/mblow/" />
+  <remote name="mblow" fetch="https://github.com/mblow/"/>
 
   <include name="enterprise-analytics/base-manifest_lumina.xml"/>
 
   <!-- Pick up Analytics projects from master & phoenix branches -->
-  <extend-project name="cbas-core" revision="lumina" dest-branch="lumina" />
-  <extend-project name="asterixdb" revision="lumina" dest-branch="lumina" />
-  <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
-  <extend-project name="cbas" revision="master" dest-branch="master" />
-  <extend-project name="cbas-ui" revision="master" dest-branch="master" />
+  <extend-project name="cbas-core" revision="lumina" dest-branch="lumina"/>
+  <extend-project name="asterixdb" revision="lumina" dest-branch="lumina"/>
+  <extend-project name="analytics-dcp-client" revision="ba19fe7f2247a1e746432a6efdef683262cd15d2" dest-branch="master"/>
+  <extend-project name="cbas" revision="1b0d22f9f738d56062a06052e1801a496fd9502f" dest-branch="master"/>
+  <extend-project name="cbas-ui" revision="d897876e73c42d400ecba9d7a1ebd8651b2ab961" dest-branch="master"/>
 
   <!-- Add the columnar-ui project -->
-  <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" />
+  <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" revision="976967c347bb3e6116a85cc2d17487b5708e7db9"/>
 
   <!-- pick up latest product-texts so we have the most accurate README.txt & licenses -->
-  <extend-project name="product-texts" revision="master" />
+  <extend-project name="product-texts" revision="master"/>
 
   <!-- pick up latest product-metadata so we have the most accurate NOTICE.txt -->
-  <extend-project name="product-metadata" revision="master" />
+  <extend-project name="product-metadata" revision="master"/>
 
   <!-- per ceej, we should pick up the latest golang project -->
-  <extend-project name="golang" revision="main" />
+  <extend-project name="golang" revision="main"/>
 
   <!-- advance select projects to enable Go & Python to be advanced ahead of 8.0.1 for CVEs -->
   <extend-project name="voltron" revision="9f4df742bb5451107ea04dfb44b391149a6994ed"/>
   <extend-project name="tlm" remote="mblow" revision="854ec55e44f7d31a9d21d5bc7a98bed9d6827ccc"/>
 
   <!-- MB-71811: pick up ns_server fork w/ fix -->
-  <extend-project name="ns_server" remote="mblow" revision="ef8d202e7bedbc52ef25240adeaaf392c0db1e9f" />
+  <extend-project name="ns_server" remote="mblow" revision="ef8d202e7bedbc52ef25240adeaaf392c0db1e9f"/>
 
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
   <project name="build" path="cbbuild" revision="" upstream="master" dest-branch="master" groups="notdefault,build">
-    <annotation name="VERSION" value="2.2.0"     keep="true"/>
-    <annotation name="SERVER_VERSION" value="8.0.2"     keep="true"/>
-    <annotation name="SERVER_BLD_NUM" value="8.0.2-5503"     keep="true"/>
-    <annotation name="SERVER_RELEASE" value="morpheus"     keep="true"/>
-    <annotation name="COLUMNAR" value="true"     keep="true"/>
+    <annotation name="VERSION" value="2.2.0" keep="true"/>
+    <annotation name="SERVER_VERSION" value="8.0.2" keep="true"/>
+    <annotation name="SERVER_BLD_NUM" value="8.0.2-5503" keep="true"/>
+    <annotation name="SERVER_RELEASE" value="morpheus" keep="true"/>
+    <annotation name="COLUMNAR" value="true" keep="true"/>
     <annotation name="COLUMNAR_COMPAT_VERSION" value="2.2.0"/>
     <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0"/>
     <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="2.1.0"/>
