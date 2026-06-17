@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="couchbaselabs-priv" fetch="ssh://git@github.com/couchbaselabs/"/>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org"/>
+
+  <default remote="couchbaselabs-priv" revision="master"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Couchbase-owned primary repository                 -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="couchbase-operator-backup" revision="master"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- License text                                       -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="product-texts" remote="couchbase"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Build support - build scripts, etc.                -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="build" path="cbbuild" remote="couchbase" revision="dee6c7d470e9a21e350a65bda8374d2ba9bc00a6">
+    <annotation name="VERSION" value="1.5.2" keep="true"/>
+  </project>
+</manifest>

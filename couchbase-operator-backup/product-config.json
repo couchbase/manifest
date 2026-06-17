@@ -9,6 +9,15 @@
             "trigger_blackduck": true,
             "jenkins_job": "couchbase-k8s-microservice-build"
         },
+        "couchbase-operator-backup/1.5.x.xml": {
+            "production": true,
+            "interval": 240,
+            "restricted": false,
+            "start_build": 100,
+            "keep_git": true,
+            "trigger_blackduck": true,
+            "jenkins_job": "couchbase-k8s-microservice-build"
+        },
         "couchbase-operator-backup/1.4.3.xml": {
             "production": true,
             "interval": 240,
