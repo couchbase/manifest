@@ -8,14 +8,14 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned primary repository                 -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="erlang" remote="couchbasedeps" revision="couchbase-27.3.4.11"/>
+  <project name="erlang" remote="couchbasedeps" revision="couchbase-27.3.4.12"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build-tools" revision="d65e13fa70c49fb3f82ca3f40c171bd80587ad41" path="build-tools"/>
   <project name="build" path="cbbuild" revision="36c14bff75870f6995a867c5a07f4ecd037eb68c">
-    <annotation name="VERSION" value="27.3.4.11" keep="true"/>
+    <annotation name="VERSION" value="27.3.4.12" keep="true"/>
     <annotation name="OPENSSL_VERSION" value="3.5.6-1" keep="true"/>
     <annotation name="NCURSES_VERSION" value="6.4-1" keep="true"/>
   </project>
