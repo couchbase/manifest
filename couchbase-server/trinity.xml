@@ -33,7 +33,7 @@
   <project name="eventing" revision="trinity" path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" revision="trinity" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="kv_engine" revision="trinity" groups="kv,bsl"/>
-  <project name="libcouchbase" revision="refs/tags/3.3.18"/>
+  <project name="libcouchbase" revision="refs/tags/3.3.19"/>
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" revision="trinity"/>
   <project name="ns_server" revision="trinity" groups="bsl"/>
   <project name="chronicle" revision="8d1feeb0d8b15e2b6a4c1a417addfd159b422a71" path="ns_server/deps/chronicle"/>
