@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="couchbase-tableau-connector/master.xml"/>
+
+  <extend-project name="build">
+    <annotation name="VERSION" value="2.0.0" keep="true"/>
+    <!-- SDK flavor(s) of the connector to build. One of:
+           analytics    -> new Analytics SDK   (enterprise-analytics taco)
+           operational  -> legacy core SDK     (couchbase-analytics taco)
+         to default the BUILD_ANALYTICS_SDK / BUILD_OPERATIONAL_SDK options. -->
+    <annotation name="SDK" value="analytics" keep="true"/>
+  </extend-project>
+</manifest>

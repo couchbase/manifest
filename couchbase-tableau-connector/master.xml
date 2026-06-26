@@ -12,22 +12,28 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Main source: Supported by Couchbase Analytics team -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="couchbase-tableau-connector" remote="couchbase-priv" revision="master" path="cbtaco"/>
+  <project name="couchbase-tableau-connector" remote="couchbase-priv" revision="master" path="."/>
 
   <!-- Apache AsterixDB Clients -->
-  <project name="asterixdb-clients" remote="apache" revision="master" path="cbtaco/asterixdb-clients" />
+  <project name="asterixdb-clients" remote="apache" revision="master" path="asterixdb-clients" />
 
   <!-- Couchbase JDBC Driver -->
-  <project name="couchbase-jdbc-driver" remote="couchbaselabs" revision="main" path="cbtaco/couchbase-jdbc-driver" />
+  <project name="couchbase-jdbc-driver" remote="couchbaselabs" revision="main" path="couchbase-jdbc-driver" />
 
   <!-- Tableau Connector SDK (tdvt-2.5.0) -->
-  <project name="connector-plugin-sdk" remote="tableau" revision="5277ca34678cd1b221d5addfe60df35150a0cd48" path="cbtaco/connector-plugin-sdk" groups="notdefault"/>
+  <project name="connector-plugin-sdk" remote="tableau" revision="5277ca34678cd1b221d5addfe60df35150a0cd48" path="connector-plugin-sdk" groups="notdefault"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="build" revision="c1b485bbf14aa1176be5ea26b7982f4002188429" remote="couchbase">
-    <annotation name="VERSION" value="1.2.0" keep="true"/>
+  <project name="build" path="cbbuild" revision="c1b485bbf14aa1176be5ea26b7982f4002188429" remote="couchbase">
+    <annotation name="VERSION" value="0.0.0" keep="true"/>
+    <!-- SDK flavor(s) of the connector to build. One of:
+           analytics    -> new Analytics SDK   (enterprise-analytics taco)
+           operational  -> legacy core SDK     (couchbase-analytics taco)
+           both         -> build both tacos
+         to default the BUILD_ANALYTICS_SDK / BUILD_OPERATIONAL_SDK options. -->
+    <annotation name="SDK" value="both" keep="true"/>
   </project>
 
   <project name="product-texts"/>
