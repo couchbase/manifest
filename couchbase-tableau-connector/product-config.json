@@ -7,7 +7,7 @@
             "restricted": false,
             "start_build": 100,
             "trigger_blackduck": true,
-            "do-build": false,
+            "do-build": true,
             "keep_git": true
         },
         "couchbase-tableau-connector/master_2x.xml": {
@@ -17,7 +17,7 @@
             "restricted": false,
             "start_build": 100,
             "trigger_blackduck": true,
-            "do-build": false,
+            "do-build": true,
             "keep_git": true
         }
     }
