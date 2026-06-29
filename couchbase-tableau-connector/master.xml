@@ -37,4 +37,6 @@
   </project>
 
   <project name="product-texts"/>
+  <project name="product-metadata"/>
+
 </manifest>
