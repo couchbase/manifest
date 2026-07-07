@@ -6,9 +6,6 @@
             "start_build": 10,
             "jenkins_server": "server.jenkins.couchbase.com",
             "jenkins_job": "cbdeps-build",
-            "jenkins_job_parameters": {
-                "SERVER_RELEASE": "trinity"
-            },
             "platforms": [ "linux",
                         "linux:aarch64",
                         "macos",
