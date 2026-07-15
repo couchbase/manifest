@@ -1,8 +1,8 @@
 {
     "manifests": {
         "cbdeps/zstd-cpp/master.xml": {
-            "release": "1.5.0",
-            "release_name": "zstd-cpp 1.5.0",
+            "release": "1.5.7",
+            "release_name": "zstd-cpp 1.5.7",
             "production": true,
             "restricted": false,
             "start_build": 1,
