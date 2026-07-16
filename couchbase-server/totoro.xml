@@ -27,7 +27,7 @@
   <project name="geocouch"/>
   <project name="gocbcrypto"  path="goproj/src/github.com/couchbase/gocbcrypto" remote="couchbase-priv" revision="main" groups="notdefault,enterprise"/>
   <project name="gocoverage" revision="main"/>
-  <project name="goxdcr"      path="goproj/src/github.com/couchbase/goxdcr" groups="bsl"/>
+  <project name="goxdcr"      path="goproj/src/github.com/couchbase/goxdcr" remote="couchbase-priv" groups="bsl"/>
   <project name="gometa"      path="goproj/src/github.com/couchbase/gometa"/>
   <project name="nitro"       path="goproj/src/github.com/couchbase/nitro" dest-branch="unstable" groups="bsl"/>
   <project name="indexing"    path="goproj/src/github.com/couchbase/indexing" dest-branch="unstable" groups="bsl"/>

@@ -26,7 +26,7 @@
   <project name="forestdb" revision="9efe6d75d7d61e742af70fb47fe97ad1d04ba86f" groups="backup"/>
   <project name="geocouch" revision="68f3b9d36630682d17ca5232770f1693b9b8fa18"/>
   <project name="gocbcrypto" path="goproj/src/github.com/couchbase/gocbcrypto" remote="couchbase-priv" revision="8085bd5ddc3d56cd352040a2d1d43f8756c3288e" groups="notdefault,enterprise"/>
-  <project name="goxdcr" revision="57cd9d1c863e8832088ed67bc4a1abb4f3b5c90b" path="goproj/src/github.com/couchbase/goxdcr" groups="bsl"/>
+  <project name="goxdcr" revision="57cd9d1c863e8832088ed67bc4a1abb4f3b5c90b" path="goproj/src/github.com/couchbase/goxdcr" remote="couchbase-priv" groups="bsl"/>
   <project name="gometa" revision="6b21ba195d9802beccb043cfec0236dc01e21199" path="goproj/src/github.com/couchbase/gometa"/>
   <project name="nitro" revision="c33425b3950e060ea284df4c479448e7c17ac611" path="goproj/src/github.com/couchbase/nitro" dest-branch="unstable" groups="bsl"/>
   <project name="indexing" revision="7efde153c3b6a449993e4f186c467430a2ca3525" path="goproj/src/github.com/couchbase/indexing" dest-branch="unstable" groups="bsl"/>
