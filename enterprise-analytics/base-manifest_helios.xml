@@ -49,7 +49,7 @@
   <project name="gomemcached" path="goproj/src/github.com/couchbase/gomemcached" revision="08051ec89911a91febd7cce46f9a4cd2ac1ceec1" upstream="morpheus" dest-branch="morpheus" groups="backup" />
   <project name="gometa" path="goproj/src/github.com/couchbase/gometa" revision="6b21ba195d9802beccb043cfec0236dc01e21199" upstream="morpheus" dest-branch="morpheus" />
   <project name="goutils" path="goproj/src/github.com/couchbase/goutils" revision="50a63867412d55ae376416a1baf94126fdfb0609" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
-  <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" revision="991b069a898bdf77906ce1d163e42290423580da" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
+  <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" remote="couchbase-priv" revision="991b069a898bdf77906ce1d163e42290423580da" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
   <project name="hebrew" remote="couchbase-priv" revision="c57616b187889a5318688f49817ccaceb9c098b9" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
   <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="a681dde71adfbe9501b5a8df98ace92156825489" upstream="morpheus" dest-branch="unstable" groups="bsl" />
