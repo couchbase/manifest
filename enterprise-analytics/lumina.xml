@@ -7,7 +7,7 @@
   <!-- Pick up Analytics projects from master & phoenix branches -->
   <extend-project name="cbas-core" revision="lumina" dest-branch="lumina"/>
   <extend-project name="asterixdb" revision="lumina" dest-branch="lumina"/>
-  <extend-project name="analytics-dcp-client" revision="ba19fe7f2247a1e746432a6efdef683262cd15d2" dest-branch="master"/>
+  <extend-project name="analytics-dcp-client" revision="lumina" dest-branch="lumina"/>
   <extend-project name="cbas" revision="lumina" dest-branch="lumina"/>
   <extend-project name="cbas-ui" revision="lumina" dest-branch="lumina"/>
 
