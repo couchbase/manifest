@@ -17,6 +17,13 @@
             "interval": 127,
             "keep_git": true
         },
+        "enterprise-analytics/helios.xml": {
+            "comment": "CBD-6816: this manifest reference only exists to facilitate missing commits between server & EA",
+            "do-build": false,
+            "find_missing_commits_force": true,
+            "find_missing_commits_target_only": true,
+            "find_missing_commits_skip_inherited": true
+        },
         "couchbase-server/morpheus.xml": {
             "release": "morpheus",
             "release_name": "Morpheus (8.0.4)",
