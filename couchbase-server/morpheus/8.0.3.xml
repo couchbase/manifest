@@ -9,13 +9,13 @@
   <default remote="couchbase" revision="master"/>
 
   <!-- Core Couchbase Server projects -->
-  <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise" revision="bc899e4a172d70577b7ff00f871b6564984da3df"/>
+  <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise" revision="46990d2f383ecddea34e654d10683bab5fa159f2"/>
   <project name="bhive" path="goproj/src/github.com/couchbase/bhive" remote="couchbase-priv" revision="b46ee301085e7887c6dc6a92e82de3bc072d01ec" groups="notdefault,enterprise"/>
-  <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise" revision="31f5016e359bde7bdf2ea4b9537c2248969bce3a"/>
-  <project name="cbft" revision="db9e9b50ffb2f755f294558d0c82241d4a7ad9b1"/>
-  <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise" revision="d13f4404e26e9d651fb145ac2daa60740975b066"/>
+  <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise" revision="fbb6acdc46c12c402c8013c069c209abbf4eeef5"/>
+  <project name="cbft" revision="morpheus"/>
+  <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise" revision="morpheus"/>
   <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise" revision="c57616b187889a5318688f49817ccaceb9c098b9"/>
-  <project name="cbgt" revision="105537770184bb92d8d596e3fab5777d2bbe770e"/>
+  <project name="cbgt" revision="morpheus"/>
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl" revision="4b185fb7d5f0e136755756b8cc3029ec64d51639"/>
   <project name="couchbase-cli" groups="kv" revision="7056b9b10f2ef5d4ae1591bf10f1e7a3e493c8b6"/>
   <project name="couchdb" revision="706d04031d9a608b6fd4e73be9d235933f1f78e2" dest-branch="unstable"/>
@@ -49,7 +49,7 @@
   <project name="sigar" revision="b1718d5c99a2bd37d97fe2c96eb0fd33a06461af" groups="kv"/>
   <project name="subjson" revision="9ad6776cafbffed50a08590b675a106102d61471" groups="bsl,kv"/>
   <project name="testrunner" revision="morpheus"/>
-  <project name="tlm" revision="ab5b910210e17aa052596cc5bf7aa8593b6efb6a" groups="bsl,kv">
+  <project name="tlm" revision="bb962efd8bd765701e8552a2aa527d12aa8f47e3" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh"/>
     <copyfile src="GNUmakefile" dest="GNUmakefile"/>
     <copyfile src="Makefile" dest="Makefile"/>
