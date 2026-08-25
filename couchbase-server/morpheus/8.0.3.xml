@@ -9,7 +9,7 @@
   <default remote="couchbase" revision="master"/>
 
   <!-- Core Couchbase Server projects -->
-  <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise" revision="46990d2f383ecddea34e654d10683bab5fa159f2"/>
+  <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise" revision="morpheus"/>
   <project name="bhive" path="goproj/src/github.com/couchbase/bhive" remote="couchbase-priv" revision="b46ee301085e7887c6dc6a92e82de3bc072d01ec" groups="notdefault,enterprise"/>
   <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise" revision="fbb6acdc46c12c402c8013c069c209abbf4eeef5"/>
   <project name="cbft" revision="morpheus"/>
@@ -49,7 +49,7 @@
   <project name="sigar" revision="b1718d5c99a2bd37d97fe2c96eb0fd33a06461af" groups="kv"/>
   <project name="subjson" revision="9ad6776cafbffed50a08590b675a106102d61471" groups="bsl,kv"/>
   <project name="testrunner" revision="morpheus"/>
-  <project name="tlm" revision="bb962efd8bd765701e8552a2aa527d12aa8f47e3" groups="bsl,kv">
+  <project name="tlm" revision="2b08c055f668f46dc79abf6d384b5913b7b2e011" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh"/>
     <copyfile src="GNUmakefile" dest="GNUmakefile"/>
     <copyfile src="Makefile" dest="Makefile"/>
