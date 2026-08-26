@@ -3,19 +3,20 @@
   <remote name="couchbase" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org"/>
   <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org"/>
 
-  <default remote="couchbase" revision="main"/>
+  <default remote="couchbase" revision="master"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned primary repository                 -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="stellar-rosetta" remote="couchbaselabs" path="stellar-rosetta" sync-s="true"/>
+  <project name="rosetta-mdb" remote="couchbase" path="rosetta-mdb" sync-s="true"/>
+  <project name="rosetta-mdb-crs" remote="couchbaselabs" path="rosetta-mdb-crs" revision="rosetta" sync-s="true"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
     <annotation name="VERSION" value="1.0.0" keep="true"/>
-    <annotation name="GOVERSION" value="SUPPORTED_NEWER" keep="true"/>
+    <!-- rosetta-inst needs protoc on PATH to build etcd-client's protos -->
+    <annotation name="PROTOC_VERSION" value="29.5" keep="true"/>
   </project>
-  <project name="golang" revision="main" remote="couchbaselabs"/>
 </manifest>

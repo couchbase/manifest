@@ -1,13 +1,13 @@
 {
     "manifests": {
-        "stellar-rosetta/main.xml": {
-            "release_name": "Stellar Rosetta - main branch",
+        "rosetta-mdb/main.xml": {
+            "release_name": "Rosetta MDB - main branch",
             "production": true,
             "interval": 240,
             "restricted": false,
             "start_build": 100,
             "trigger_blackduck": false,
-            "jenkins_job": "stellar-rosetta-build",
+            "jenkins_job": "rosetta-mdb-build",
             "keep_git": true
         }
     }
