@@ -22,6 +22,8 @@
   <!-- per ceej, we should pick up the latest golang project -->
   <extend-project name="golang" revision="main" />
 
+  <!-- CBD-6545: pick up installer from master -->
+  <extend-project name="voltron" revision="master" />
 
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
