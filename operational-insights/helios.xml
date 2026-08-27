@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="operational-insights/base-manifest_helios.xml"/>
+
+  <!-- Pick up Analytics projects from master branches -->
+  <extend-project name="cbas-core" revision="master" dest-branch="master" />
+  <extend-project name="asterixdb" revision="master" dest-branch="master" />
+  <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
+  <extend-project name="cbas" revision="master" dest-branch="master" />
+  <extend-project name="cbas-ui" revision="master" dest-branch="master" />
+
+  <!-- Add the columnar-ui project -->
+  <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" />
+
+  <!-- pick up latest product-texts so we have the most accurate README.txt & licenses -->
+  <extend-project name="product-texts" revision="master" />
+
+  <!-- pick up latest product-metadata so we have the most accurate NOTICE.txt -->
+  <extend-project name="product-metadata" revision="master" />
+
+  <!-- per ceej, we should pick up the latest golang project -->
+  <extend-project name="golang" revision="main" />
+
+
+  <!-- Update build project to provide different annotations -->
+  <remove-project name="build"/>
+  <project name="build" path="cbbuild" revision="" upstream="master" dest-branch="master" groups="notdefault,build">
+    <annotation name="VERSION" value="3.0.0"     keep="true"/>
+    <annotation name="SERVER_VERSION" value="8.0.3"     keep="true"/>
+    <annotation name="SERVER_BLD_NUM" value="8.0.3-5925"     keep="true"/>
+    <annotation name="SERVER_RELEASE" value="morpheus"     keep="true"/>
+    <annotation name="COLUMNAR" value="true"     keep="true"/>
+
+    <!-- Product identity (rebrand, plan 10.4).  keep="true" is required: `repo manifest`
+         drops annotations without it, so a developer workspace would otherwise fall back to
+         the CMake defaults and build an unbranded product. -->
+    <annotation name="PRODUCT_DISPLAY_NAME" value="Operational Insights"     keep="true"/>
+    <!-- Pinned to the EA package name: in-place upgrade is a requirement, and a package
+         rename fires EA 2.x's already-shipped destructive removal branch.
+         See upgrade-in-place.md, decisions 1 and 3. -->
+    <annotation name="PRODUCT_PACKAGE_NAME" value="enterprise-analytics"     keep="true"/>
+    <!-- Version-string suffix; deliberately not derived from PRODUCT_PACKAGE_NAME, which is
+         pinned above, nor spelled with a hyphen so the version splits on the last '-'.
+         See plan 9.4. -->
+    <annotation name="PRODUCT_VERSION_SUFFIX" value="operational_insights"     keep="true"/>
+
+    <!-- Compatibility versions.  Advance the current version only; both minimums stay put,
+         or the swap-rebalance and Capella online-upgrade paths break.  See plan 9.5. -->
+    <annotation name="COLUMNAR_COMPAT_VERSION" value="3.0.0"/>
+    <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0"/>
+    <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="2.1.0"/>
+  </project>
+
+  <remove-project name="query"/>
+  <remove-project name="query-ee"/>
+  <remove-project name="indexing"/>
+  <remove-project name="goxdcr"/>
+  <remove-project name="xdcrDiffer"/>
+  <remove-project name="gometa"/>
+  <remove-project name="cbft"/>
+  <remove-project name="cbftx"/>
+  <remove-project name="cbgt"/>
+  <remove-project name="hebrew"/>
+  <remove-project name="eventing"/>
+  <remove-project name="eventing-ee"/>
+  <remove-project name="cbbs"/>
+  <remove-project name="n1fty"/>
+  <remove-project name="bhive"/>
+  <remove-project name="plasma"/>
+  <remove-project name="gocbcrypto"/>
+  <!-- we can't remove the following at least while we have a test dependency on samples
+  <remove- project name="magma"/>
+  <remove- project name="backup"/>
+ -->
+  <remove-project name="udf-api"/>
+  <remove-project name="godbc"/>
+  <remove-project name="nitro"/>
+  <remove-project name="regulator"/>
+</manifest>
