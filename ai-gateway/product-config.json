@@ -9,12 +9,21 @@
             "do-build": true,
             "keep_git": true
         },
-        "ai-gateway/0.1.xml": {
+        "ai-gateway/1.1.xml": {
             "production": true,
             "interval": 240,
             "restricted": false,
             "start_build": 1,
-            "trigger_blackduck": true,
+            "trigger_blackduck": false,
+            "do-build": true,
+            "keep_git": true
+        },
+        "ai-gateway/1.2.xml": {
+            "production": true,
+            "interval": 240,
+            "restricted": false,
+            "start_build": 1,
+            "trigger_blackduck": false,
             "do-build": true,
             "keep_git": true
         }
