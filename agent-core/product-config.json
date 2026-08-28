@@ -1,0 +1,13 @@
+{
+    "manifests": {
+        "agent-core/master.xml": {
+            "production": true,
+            "interval": 240,
+            "restricted": false,
+            "start_build": 1,
+            "trigger_blackduck": false,
+            "do-build": true,
+            "keep_git": true
+        }
+    }
+}
