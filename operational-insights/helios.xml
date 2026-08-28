@@ -35,6 +35,12 @@
     <annotation name="SERVER_RELEASE" value="morpheus"     keep="true"/>
     <annotation name="COLUMNAR" value="true"     keep="true"/>
 
+    <!-- The product key: the latestbuilds directory and the name build jobs
+         publish under.  Read rather than derived, so a toy manifest kept
+         outside the product directory structure still identifies itself.
+         keep="true" is required or `repo manifest` drops it. -->
+    <annotation name="PRODUCT" value="operational-insights"     keep="true"/>
+
     <!-- Product identity (rebrand, plan 10.4).  keep="true" is required: `repo manifest`
          drops annotations without it, so a developer workspace would otherwise fall back to
          the CMake defaults and build an unbranded product. -->
