@@ -45,14 +45,16 @@
          drops annotations without it, so a developer workspace would otherwise fall back to
          the CMake defaults and build an unbranded product. -->
     <annotation name="PRODUCT_DISPLAY_NAME" value="Operational Insights"     keep="true"/>
-    <!-- Pinned to the EA package name: in-place upgrade is a requirement, and a package
-         rename fires EA 2.x's already-shipped destructive removal branch.
-         See upgrade-in-place.md, decisions 1 and 3. -->
-    <annotation name="PRODUCT_PACKAGE_NAME" value="enterprise-analytics"     keep="true"/>
+    <annotation name="PRODUCT_PACKAGE_NAME" value="operational-insights"     keep="true"/>
     <!-- Version-string suffix; deliberately not derived from PRODUCT_PACKAGE_NAME, which is
          pinned above, nor spelled with a hyphen so the version splits on the last '-'.
          See plan 9.4. -->
     <annotation name="PRODUCT_VERSION_SUFFIX" value="operational_insights"     keep="true"/>
+    <!-- The bin/ command.  Declared rather than derived: Enterprise Analytics'
+         launcher is couchbase-server, which is neither its product key nor its
+         package name, so there is no rule to derive from.  ns_server installs
+         it and voltron's systemd unit starts it, so both read this. -->
+    <annotation name="PRODUCT_LAUNCHER_NAME" value="operational-insights"     keep="true"/>
 
     <!-- Compatibility versions.  Advance the current version only; both minimums stay put,
          or the swap-rebalance and Capella online-upgrade paths break.  See plan 9.5. -->
