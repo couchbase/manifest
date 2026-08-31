@@ -14,7 +14,7 @@
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" revision="0961883a4a6afcc1fb82e9e876af454f43944298">
-    <annotation name="VERSION" value="1.0.1" keep="true"/>
+    <annotation name="VERSION" value="1.0.2" keep="true"/>
   </project>
 
   <!-- Want these explicitly master, regardless of the default -->
