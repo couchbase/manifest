@@ -12,10 +12,10 @@
   <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise" revision="8.0.3"/>
   <project name="bhive" path="goproj/src/github.com/couchbase/bhive" remote="couchbase-priv" revision="b46ee301085e7887c6dc6a92e82de3bc072d01ec" groups="notdefault,enterprise"/>
   <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise" revision="f7c3c68c9cdde1920e2cb1068f8a5dbaae9536db"/>
-  <project name="cbft" revision="morpheus"/>
-  <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise" revision="morpheus"/>
+  <project name="cbft" revision="98872ad12545fd45f96849b813c3dc3012d85193"/>
+  <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise" revision="d13f4404e26e9d651fb145ac2daa60740975b066"/>
   <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise" revision="c57616b187889a5318688f49817ccaceb9c098b9"/>
-  <project name="cbgt" revision="morpheus"/>
+  <project name="cbgt" revision="4bf47961ef4246eb496b8798955670d62ec12cc0"/>
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl" revision="4b185fb7d5f0e136755756b8cc3029ec64d51639"/>
   <project name="couchbase-cli" groups="kv" revision="7056b9b10f2ef5d4ae1591bf10f1e7a3e493c8b6"/>
   <project name="couchdb" revision="706d04031d9a608b6fd4e73be9d235933f1f78e2" dest-branch="unstable"/>
