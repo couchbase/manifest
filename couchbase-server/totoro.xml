@@ -19,7 +19,7 @@
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl"/>
   <project name="couchbase-cli" groups="kv"/>
   <project name="couchdb" dest-branch="unstable"/>
-  <project name="couchstore" groups="kv"/>
+  <project name="couchstore" revision="totoro" groups="kv"/>
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" />
   <!-- forestdb uses "cb-master" branch in place of "master" for all production builds. -->
   <!-- Future release-specific git branches, if necessary, should be made from cb-master. -->
@@ -34,22 +34,22 @@
   <project name="plasma"      path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing"    path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
-  <project name="kv_engine" groups="kv,bsl"/>
+  <project name="kv_engine" revision="totoro" groups="kv,bsl"/>
   <project name="libcouchbase" revision="refs/tags/3.3.19"/>
   <project name="magma" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="fusion" revision="main" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
   <project name="ns_server" groups="bsl"/>
   <project name="server-ui" remote="couchbase-priv" revision="main" groups="notdefault,enterprise"/>
   <project name="vbmap"/>
-  <project name="phosphor" groups="bsl,kv"/>
-  <project name="platform" groups="bsl,kv"/>
+  <project name="phosphor" revision="totoro" groups="bsl,kv"/>
+  <project name="platform" revision="totoro" groups="bsl,kv"/>
   <project name="product-texts"/>
   <project name="query-ee"  path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="query"     path="goproj/src/github.com/couchbase/query" groups="bsl"/>
   <project name="query-ui" groups="bsl"/>
   <project name="regulator" revision="main" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
-  <project name="sigar" groups="kv"/>
-  <project name="subjson" groups="bsl,kv"/>
+  <project name="sigar" revision="totoro" groups="kv"/>
+  <project name="subjson" revision="totoro" groups="bsl,kv"/>
   <project name="testrunner"/>
   <project name="tlm" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
