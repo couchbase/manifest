@@ -51,7 +51,7 @@
   <project name="sigar" revision="totoro" groups="kv"/>
   <project name="subjson" revision="totoro" groups="bsl,kv"/>
   <project name="testrunner"/>
-  <project name="tlm" groups="bsl,kv">
+  <project name="tlm" revision="totoro" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile"    dest="GNUmakefile"    />
     <copyfile src="Makefile"       dest="Makefile"       />
