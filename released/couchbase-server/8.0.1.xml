@@ -36,7 +36,7 @@
   <project name="couchdbx-app" revision="f797baeb32ff473cec77dae36e239dd806afc519" groups="notdefault,packaging" />
   <project name="couchstore" revision="b11d344556d6e5827e0b84489fb70aa67ba89090" groups="kv" />
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="218129e2b4b06c6381c7aabb7b5c78dff7f07e3c" />
-  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="6a0b88a50fce7f229ca1da677e349f57ae03ae2e" upstream="morpheus" dest-branch="unstable" groups="notdefault,enterprise" />
+  <project name="eventing" path="goproj/src/github.com/couchbase/eventing" revision="8.0.1" upstream="morpheus" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" revision="1392f2e0a55ef38d3cf70ff5caeac0298759bc99" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="forestdb" revision="9efe6d75d7d61e742af70fb47fe97ad1d04ba86f" groups="backup" />
   <project name="geocouch" revision="68f3b9d36630682d17ca5232770f1693b9b8fa18" />
