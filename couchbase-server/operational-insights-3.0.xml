@@ -1,0 +1,6 @@
+<!-- CBD-6820: A dummy manifest to enable ns_server CI on the operational-insights-3.0 branch -->
+<manifest>
+  <include name="released/couchbase-server/8.0.3.xml" />
+
+  <extend-project name="ns_server" revision="operational-insights-3.0" />
+</manifest>
