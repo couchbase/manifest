@@ -11,7 +11,7 @@
             "jenkins_job": "couchbase-columnar-build",
             "restricted": false,
             "do-build": false,
-            "approval_ticket": "MB-TBD"
+            "approval_ticket": "MB-72186"
         }
     }
 }

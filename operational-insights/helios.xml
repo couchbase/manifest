@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <include name="operational-insights/base-manifest_helios.xml"/>
+  <include name="enterprise-analytics/base-manifest_helios.xml"/>
 
   <!-- Pick up Analytics projects from master branches -->
   <extend-project name="cbas-core" revision="master" dest-branch="master" />
@@ -25,6 +25,7 @@
   <!-- CBD-6545: pick up installer from master -->
   <extend-project name="voltron" revision="master" />
 
+  <extend-project name="ns_server" revision="operational-insights-3.0" dest-branch="operational-insights-3.0"/>
 
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
