@@ -1,22 +1,8 @@
 <!-- CBD-6820: A dummy manifest to enable ns_server CI on the operational-insights-3.0 branch -->
 <manifest>
-  <include name="enterprise-analytics/base-manifest_helios.xml"/>
+  <include name="couchbase-server/morpheus/8.0.3.xml"/>
 
-  <!-- Pick up Analytics projects from master branches -->
-  <extend-project name="cbas-core" revision="master" dest-branch="master" />
-  <extend-project name="asterixdb" revision="master" dest-branch="master" />
-  <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
-  <extend-project name="cbas" revision="master" dest-branch="master" />
-  <extend-project name="cbas-ui" revision="master" dest-branch="master" />
-
-  <!-- pick up latest product-texts so we have the most accurate README.txt & licenses -->
-  <extend-project name="product-texts" revision="master" />
-
-  <!-- pick up latest product-metadata so we have the most accurate NOTICE.txt -->
-  <extend-project name="product-metadata" revision="master" />
-
-  <!-- per ceej, we should pick up the latest golang project -->
-  <extend-project name="golang" revision="main" />
+  <extend-project name="ns_server" revision="operational-insights-3.0" dest-branch="operational-insights-3.0"/>
 
   <!-- CBD-6545: pick up installer from master -->
   <extend-project name="voltron" revision="master" />
