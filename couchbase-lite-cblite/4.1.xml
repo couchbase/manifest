@@ -4,7 +4,7 @@
   <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org"/>
   <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org"/>
 
-  <default remote="couchbase" revision="release/4.0"/>
+  <default remote="couchbase" revision="release/4.1"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned primary repository                 -->
@@ -20,7 +20,7 @@
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" revision="a8ba0a9d6058381edc320648cafaf696a611908c">
-    <annotation name="VERSION" value="4.0.4" keep="true"/>
+    <annotation name="VERSION" value="4.1.2" keep="true"/>
   </project>
 
   <!-- Want these explicitly master, regardless of the default -->

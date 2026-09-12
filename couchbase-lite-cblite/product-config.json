@@ -8,13 +8,32 @@
             "start_build": 1,
             "keep_git": true
        },
+        "couchbase-lite-cblite/4.1.xml": {
+            "release_name": "cblite tool - release/4.1",
+            "production": true,
+            "interval": 240,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "do-build": false
+       },
+        "couchbase-lite-cblite/3.4.xml": {
+            "release_name": "cblite tool - release/3.4",
+            "production": true,
+            "interval": 240,
+            "restricted": false,
+            "start_build": 1,
+            "keep_git": true,
+            "do-build": false
+       },
         "couchbase-lite-cblite/4.0.xml": {
             "release_name": "cblite tool - release/4.0",
             "production": true,
             "interval": 240,
             "restricted": false,
             "start_build": 1,
-            "keep_git": true
+            "keep_git": true,
+            "do-build": false
        },
         "couchbase-lite-cblite/3.2.xml": {
             "release_name": "cblite tool - 3.2",
