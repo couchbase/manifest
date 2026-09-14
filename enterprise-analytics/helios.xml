@@ -38,6 +38,7 @@
          here rather than defaulted in those repos, so this product's names live with
          the rest of its definition.  keep="true" is required: `repo manifest` drops
          annotations without it, and the readers then see nothing. -->
+    <annotation name="PRODUCT" value="enterprise-analytics"     keep="true"/>
     <annotation name="PRODUCT_PACKAGE_NAME" value="enterprise-analytics"     keep="true"/>
     <annotation name="PRODUCT_DISPLAY_NAME" value="Enterprise Analytics"     keep="true"/>
     <annotation name="PRODUCT_LAUNCHER_NAME" value="couchbase-server"     keep="true"/>
