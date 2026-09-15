@@ -25,6 +25,8 @@
   <!-- CBD-6545: pick up installer from master -->
   <extend-project name="voltron" revision="master" />
 
+  <extend-project name="ns_server" revision="operational-insights-3.0" dest-branch="operational-insights-3.0"/>
+
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
   <project name="build" path="cbbuild" revision="" upstream="master" dest-branch="master" groups="notdefault,build">
