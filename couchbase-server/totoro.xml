@@ -50,7 +50,7 @@
   <project name="regulator" revision="main" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="sigar" revision="totoro" groups="kv"/>
   <project name="subjson" revision="totoro" groups="bsl,kv"/>
-  <project name="testrunner"/>
+  <project name="testrunner" revision="totoro"/>
   <project name="tlm" revision="totoro" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile"    dest="GNUmakefile"    />
