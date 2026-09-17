@@ -10,7 +10,7 @@
             "keep_git": true,
             "jenkins_job": "couchbase-columnar-build",
             "restricted": false,
-            "do-build": false,
+            "do-build": true,
             "approval_ticket": "MB-72186"
         }
     }
