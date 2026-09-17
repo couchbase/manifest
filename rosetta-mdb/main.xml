@@ -15,7 +15,7 @@
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
-    <annotation name="VERSION" value="1.0.0" keep="true"/>
+    <annotation name="VERSION" value="0.7.0" keep="true"/>
     <!-- rosetta-inst needs protoc on PATH to build etcd-client's protos -->
     <annotation name="PROTOC_VERSION" value="29.5" keep="true"/>
   </project>
