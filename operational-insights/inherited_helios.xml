@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- The Helios layer shared by operational-insights/helios.xml and
+       enterprise-analytics/helios.xml, sitting between them and the generated
+       base manifest.
+
+       Anything declared here is inherited by those manifests rather than
+       declared in them, which is what takes it out of scope for the missing
+       commits check: find_missing_commits reads only the <project> and
+       <extend-project> elements a manifest names itself and deliberately does
+       not follow <include>.  So this file is where a project whose divergence
+       from Couchbase Server is intentional belongs - one we have taken
+       ownership of and do not want merged forward.
+
+       A project we do still want to track, such as the tlm pin in
+       helios.xml, stays in the manifest that names it. -->
+
+  <include name="operational-insights/base-manifest_helios.xml"/>
+
+  <!-- MB-72186, CBD-6820: Helios runs its own ns_server branch; Server's
+       ns_server commits are not ours to merge forward. -->
+  <extend-project name="ns_server" revision="operational-insights-3.0" dest-branch="operational-insights-3.0"/>
+
+</manifest>

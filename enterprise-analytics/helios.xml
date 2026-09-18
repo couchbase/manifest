@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <include name="enterprise-analytics/base-manifest_helios.xml"/>
+  <include name="operational-insights/inherited_helios.xml"/>
 
   <!-- Pick up Analytics projects from master branches -->
   <extend-project name="cbas-core" revision="master" dest-branch="master" />
@@ -24,8 +24,6 @@
 
   <!-- CBD-6545: pick up installer from master -->
   <extend-project name="voltron" revision="master" />
-
-  <extend-project name="ns_server" revision="operational-insights-3.0" dest-branch="operational-insights-3.0"/>
 
   <!-- MB-73989: the base manifest pins tlm to the sha its server build was cut from, so
        tlm work landing on morpheus never reaches this product.  Pin the head that carries
