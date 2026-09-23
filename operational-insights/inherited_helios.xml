@@ -22,4 +22,6 @@
        ns_server commits are not ours to merge forward. -->
   <extend-project name="ns_server" revision="operational-insights-3.0" dest-branch="operational-insights-3.0"/>
 
+  <extend-project name="couchbase-cli" revision="385c95442597acb473a86d4f0ec1067d3667e974"/>
+
 </manifest>
