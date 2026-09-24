@@ -15,7 +15,9 @@
             "start_build": 1000,
             "trigger_blackduck": true,
             "interval": 127,
-            "keep_git": true
+            "keep_git": true,
+            "restricted": true,
+            "approval_ticket": "MB-68617"
         },
         "enterprise-analytics/helios.xml": {
             "comment": "CBD-6816: this manifest reference only exists to facilitate missing commits between server & EA",
