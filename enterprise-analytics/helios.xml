@@ -28,7 +28,7 @@
   <!-- MB-73989: the base manifest pins tlm to the sha its server build was cut from, so
        tlm work landing on morpheus never reaches this product.  Pin the head that carries
        it; bump as further tlm work lands, as lumina.xml does for its own pin. -->
-  <extend-project name="tlm" revision="84e385c52aed84d32f00e08ab0c9b7ad61c2e387"/>
+  <extend-project name="tlm" revision="e6007ef2d85a25f94a858d89a5c9d068ef253907"/>
 
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
