@@ -27,7 +27,7 @@
   <project name="geocouch"/>
   <project name="gocbcrypto"  path="goproj/src/github.com/couchbase/gocbcrypto" remote="couchbase-priv" revision="main"/>
   <project name="gocoverage" revision="main"/>
-  <project name="goxdcr"      path="goproj/src/github.com/couchbase/goxdcr" remote="couchbase-priv" groups="bsl"/>
+  <project name="goxdcr"      revision="totoro" path="goproj/src/github.com/couchbase/goxdcr" remote="couchbase-priv" groups="bsl"/>
   <project name="gometa"      path="goproj/src/github.com/couchbase/gometa"/>
   <project name="nitro"       path="goproj/src/github.com/couchbase/nitro" dest-branch="unstable" groups="bsl"/>
   <project name="indexing"    path="goproj/src/github.com/couchbase/indexing" dest-branch="unstable" groups="bsl"/>
@@ -44,8 +44,8 @@
   <project name="phosphor" revision="totoro" groups="bsl,kv"/>
   <project name="platform" revision="totoro" groups="bsl,kv"/>
   <project name="product-texts"/>
-  <project name="query-ee"  path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
-  <project name="query"     path="goproj/src/github.com/couchbase/query" groups="bsl"/>
+  <project name="query-ee"  revision="totoro" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
+  <project name="query"     revision="totoro" path="goproj/src/github.com/couchbase/query" groups="bsl"/>
   <project name="query-ui" groups="bsl"/>
   <project name="regulator" revision="main" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="sigar" revision="totoro" groups="kv"/>
@@ -74,12 +74,12 @@
   <!-- Go support libraries - Couchbase-supported -->
   <!-- Some are in goproj to facilitate eventual move to Go modules -->
   <project name="n1fty"                                                              path="goproj/src/github.com/couchbase/n1fty" groups="bsl"/>
-  <project name="go_json"                                                            path="goproj/src/github.com/couchbase/go_json"/>
-  <project name="gomemcached"                                                        path="goproj/src/github.com/couchbase/gomemcached" groups="backup"/>
+  <project name="go_json"                                          revision="totoro" path="goproj/src/github.com/couchbase/go_json"/>
+  <project name="gomemcached"                                      revision="totoro" path="goproj/src/github.com/couchbase/gomemcached" groups="backup"/>
   <project name="cbauth"                                           revision="totoro" path="goproj/src/github.com/couchbase/cbauth" groups="backup"/>
-  <project name="go-couchbase"                                                       path="goproj/src/github.com/couchbase/go-couchbase" groups="backup"/>
-  <project name="goutils"                                                            path="goproj/src/github.com/couchbase/goutils" groups="bsl"/>
-  <project name="godbc"                                                              path="goproj/src/github.com/couchbase/godbc"/>
+  <project name="go-couchbase"                                     revision="totoro" path="goproj/src/github.com/couchbase/go-couchbase" groups="backup"/>
+  <project name="goutils"                                          revision="totoro" path="goproj/src/github.com/couchbase/goutils" groups="bsl"/>
+  <project name="godbc"                                            revision="totoro" path="goproj/src/github.com/couchbase/godbc"/>
 
   <!-- C/C++ support libraries -->
   <project name="gsl-lite"       remote="couchbasedeps" revision="refs/tags/v0.38.1" path="third_party/gsl-lite" groups="kv"/>
