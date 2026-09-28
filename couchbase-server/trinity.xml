@@ -13,7 +13,7 @@
   <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise" revision="trinity"/>
   <project name="cbft" revision="trinity"/>
   <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise" revision="trinity"/>
-  <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise"/>
+  <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise" revision="c57616b187889a5318688f49817ccaceb9c098b9"/>
   <project name="cbgt" revision="trinity"/>
   <project name="cbsummary" revision="b93a39e6c46c3de1a73153d49579012f0737592b" path="goproj/src/github.com/couchbase/cbsummary"/>
   <project name="couchbase-cli" groups="kv" revision="trinity"/>

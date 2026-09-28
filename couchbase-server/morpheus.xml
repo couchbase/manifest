@@ -14,7 +14,7 @@
   <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise" revision="morpheus"/>
   <project name="cbft" revision="morpheus"/>
   <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise" revision="morpheus"/>
-  <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise"/>
+  <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise" revision="c57616b187889a5318688f49817ccaceb9c098b9"/>
   <project name="cbgt" revision="morpheus"/>
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl"/>
   <project name="couchbase-cli" groups="kv" revision="morpheus"/>
