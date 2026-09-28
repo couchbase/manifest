@@ -12,10 +12,10 @@
   <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise"/>
   <project name="bhive"  path="goproj/src/github.com/couchbase/bhive" remote="couchbase-priv" revision="main" groups="notdefault,enterprise"/>
   <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise"/>
-  <project name="cbft"/>
-  <project name="cbftx" remote="couchbase-priv" groups="notdefault,enterprise"/>
+  <project name="cbft"   revision="totoro" />
+  <project name="cbftx"  remote="couchbase-priv" groups="notdefault,enterprise" revision="totoro"/>
   <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise"/>
-  <project name="cbgt"/>
+  <project name="cbgt"   revision="totoro" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl"/>
   <project name="couchbase-cli" groups="kv"/>
   <project name="couchdb" dest-branch="unstable"/>
@@ -73,7 +73,7 @@
 
   <!-- Go support libraries - Couchbase-supported -->
   <!-- Some are in goproj to facilitate eventual move to Go modules -->
-  <project name="n1fty"                                                              path="goproj/src/github.com/couchbase/n1fty" groups="bsl"/>
+  <project name="n1fty"                                            revision="totoro" path="goproj/src/github.com/couchbase/n1fty" groups="bsl"/>
   <project name="go_json"                                          revision="totoro" path="goproj/src/github.com/couchbase/go_json"/>
   <project name="gomemcached"                                      revision="totoro" path="goproj/src/github.com/couchbase/gomemcached" groups="backup"/>
   <project name="cbauth"                                           revision="totoro" path="goproj/src/github.com/couchbase/cbauth" groups="backup"/>
