@@ -24,7 +24,7 @@
   <!-- Future release-specific git branches, if necessary, should be made from cb-master. -->
   <project name="forestdb" revision="neo" groups="backup"/>
   <project name="geocouch" revision="68f3b9d36630682d17ca5232770f1693b9b8fa18"/>
-  <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" groups="bsl" revision="neo"/>
+  <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" remote="couchbase-priv" groups="bsl" revision="neo"/>
   <project name="gometa" revision="neo" path="goproj/src/github.com/couchbase/gometa"/>
   <project name="nitro" revision="neo" path="goproj/src/github.com/couchbase/nitro" groups="bsl"/>
   <project name="indexing" revision="neo" path="goproj/src/github.com/couchbase/indexing" groups="bsl"/>
