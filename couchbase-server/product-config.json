@@ -7,6 +7,16 @@
             "interval": 10100,
             "keep_git": true
         },
+        "couchbase-server/ponyo.xml": {
+            "release": "ponyo",
+            "release_name": "Ponyo",
+            "parent": "branch-master.xml",
+            "production": true,
+            "start_build": 1000,
+            "trigger_blackduck": true,
+            "interval": 1440,
+            "keep_git": true
+        },
         "couchbase-server/totoro.xml": {
             "release": "totoro",
             "release_name": "Totoro",
