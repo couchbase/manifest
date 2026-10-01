@@ -84,10 +84,11 @@
   <remove-project name="bhive"/>
   <remove-project name="plasma"/>
   <remove-project name="gocbcrypto"/>
-  <!-- we can't remove the following at least while we have a test dependency on samples
-  <remove- project name="magma"/>
-  <remove- project name="backup"/>
- -->
+  <!-- MB-72455: the tests keep no buckets on the cluster_run nodes, which the analytics profile
+       does not allow, and run cbimport and the other KV tools inside their Docker KV containers.
+       backup goes with magma: its build generates Go from magma's flatbuffers schema. -->
+  <remove-project name="magma"/>
+  <remove-project name="backup"/>
   <remove-project name="udf-api"/>
   <remove-project name="godbc"/>
   <remove-project name="nitro"/>
