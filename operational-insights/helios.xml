@@ -28,7 +28,7 @@
   <!-- MB-73989: the base manifest pins tlm to the sha its server build was cut from, so
        tlm work landing on morpheus never reaches this product.  Pin the head that carries
        it; bump as further tlm work lands, as lumina.xml does for its own pin. -->
-  <extend-project name="tlm" revision="e6007ef2d85a25f94a858d89a5c9d068ef253907"/>
+  <extend-project name="tlm" revision="735ec4cd6ac2f511b85490212b1af300acb01e09"/>
 
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
@@ -89,6 +89,15 @@
        backup goes with magma: its build generates Go from magma's flatbuffers schema. -->
   <remove-project name="magma"/>
   <remove-project name="backup"/>
+  <!-- MB-72455: nothing left links forestdb (backup was its consumer); docloader only installs the
+       sample-bucket zips, which a product allowing no buckets cannot load; and no remaining Go
+       module replaces go-couchbase, gomemcached or go_json with its checkout, so those come from
+       the module proxy. tlm adds forestdb and docloader only when they are checked out. -->
+  <remove-project name="forestdb"/>
+  <remove-project name="docloader"/>
+  <remove-project name="go-couchbase"/>
+  <remove-project name="gomemcached"/>
+  <remove-project name="go_json"/>
   <remove-project name="udf-api"/>
   <remove-project name="godbc"/>
   <remove-project name="nitro"/>
