@@ -28,7 +28,7 @@
   <!-- MB-73989: the base manifest pins tlm to the sha its server build was cut from, so
        tlm work landing on morpheus never reaches this product.  Pin the head that carries
        it; bump as further tlm work lands, as lumina.xml does for its own pin. -->
-  <extend-project name="tlm" revision="735ec4cd6ac2f511b85490212b1af300acb01e09"/>
+  <extend-project name="tlm" revision="111cdb253a69f2009253eb6ff58ed9fefa9c90b5"/>
 
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
@@ -104,6 +104,11 @@
   <remove-project name="libcouchbase"/>
   <remove-project name="testrunner"/>
   <remove-project name="gocoverage"/>
+  <!-- MB-72454: with no buckets there are no vbucket maps for vbmap to compute, and no spatial
+       views for geocouch, a couchdb feature the analytics profile disables. ns_server builds and
+       cluster_runs without either, and tlm adds them only when they are checked out. -->
+  <remove-project name="geocouch"/>
+  <remove-project name="vbmap"/>
   <remove-project name="udf-api"/>
   <remove-project name="godbc"/>
   <remove-project name="nitro"/>
