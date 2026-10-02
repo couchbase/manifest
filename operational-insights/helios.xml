@@ -98,6 +98,12 @@
   <remove-project name="go-couchbase"/>
   <remove-project name="gomemcached"/>
   <remove-project name="go_json"/>
+  <!-- MB-72455: the tests run cbc-pillowfight inside their Docker KV containers, the last client
+       tool they took from the local install, and tlm adds libcouchbase only when it is checked
+       out. Nothing builds or runs testrunner or gocoverage. -->
+  <remove-project name="libcouchbase"/>
+  <remove-project name="testrunner"/>
+  <remove-project name="gocoverage"/>
   <remove-project name="udf-api"/>
   <remove-project name="godbc"/>
   <remove-project name="nitro"/>
