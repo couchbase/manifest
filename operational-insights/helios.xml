@@ -4,7 +4,10 @@
   <include name="operational-insights/inherited_helios.xml"/>
 
   <!-- Pick up Analytics projects from master branches -->
-  <extend-project name="cbas-core" revision="master" dest-branch="master" />
+  <extend-project name="cbas-core" revision="master" dest-branch="master">
+    <!-- MB-74372: workspace-level CLAUDE.md for Claude Code sessions at the client root -->
+    <linkfile src="claude/workspace/CLAUDE.md" dest="CLAUDE.md" />
+  </extend-project>
   <extend-project name="asterixdb" revision="master" dest-branch="master" />
   <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
   <extend-project name="cbas" revision="master" dest-branch="master" />
