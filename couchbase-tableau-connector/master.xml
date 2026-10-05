@@ -29,7 +29,7 @@
   <project name="build" path="cbbuild" revision="c1b485bbf14aa1176be5ea26b7982f4002188429" remote="couchbase">
     <annotation name="VERSION" value="0.0.0" keep="true"/>
     <!-- SDK flavor(s) of the connector to build. One of:
-           analytics    -> new Analytics SDK   (enterprise-analytics taco)
+           analytics    -> new Analytics SDK   (couchbase-operational-insights taco)
            operational  -> legacy core SDK     (couchbase-analytics taco)
            both         -> build both tacos
          to default the BUILD_ANALYTICS_SDK / BUILD_OPERATIONAL_SDK options. -->
