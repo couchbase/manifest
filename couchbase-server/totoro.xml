@@ -46,7 +46,6 @@
   <project name="product-texts"/>
   <project name="query-ee"  revision="totoro" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="query"     revision="totoro" path="goproj/src/github.com/couchbase/query" groups="bsl"/>
-  <project name="query-ui" groups="bsl"/>
   <project name="regulator" revision="main" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="sigar" revision="totoro" groups="kv"/>
   <project name="subjson" revision="totoro" groups="bsl,kv"/>
@@ -67,7 +66,6 @@
   <project name="asterixdb" revision="totoro" path="analytics/asterixdb" groups="notdefault,enterprise,analytics"/>
   <project name="analytics-dcp-client" revision="totoro" path="analytics/java-dcp-client" groups="notdefault,enterprise,analytics"/>
   <project name="cbas" revision="totoro" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
-  <project name="cbas-ui" revision="totoro" groups="notdefault,enterprise,analytics"/>
 
   <!-- Third-party projects -->
 
