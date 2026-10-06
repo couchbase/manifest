@@ -8,7 +8,7 @@
     <!-- MB-74372: workspace-level CLAUDE.md for Claude Code sessions at the client root -->
     <linkfile src="claude/workspace/CLAUDE.md" dest="CLAUDE.md" />
   </extend-project>
-  <extend-project name="asterixdb" revision="master" dest-branch="master" />
+  <extend-project name="asterixdb" revision="2d57ee72a5a616a3eb1cdc11dd351728ab9d65a9" dest-branch="master" />
   <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
   <extend-project name="cbas" revision="master" dest-branch="master" />
   <extend-project name="cbas-ui" revision="master" dest-branch="master" />
