@@ -37,7 +37,7 @@
             "keep_git": true,
             "jenkins_job": "couchbase-columnar-build",
             "restricted": true,
-            "do-build": true,
+            "do-build": false,
             "approval_ticket": "MB-72746"
         },
         "enterprise-analytics/phoenix.xml": {
@@ -51,7 +51,7 @@
             "keep_git": true,
             "jenkins_job": "couchbase-columnar-build",
             "restricted": true,
-            "do-build": true,
+            "do-build": false,
             "approval_ticket": "MB-71694"
         },
         "enterprise-analytics/phoenix/2.0.0.xml": {
@@ -65,6 +65,7 @@
             "keep_git": true,
             "jenkins_job": "couchbase-columnar-build",
             "restricted": true,
+            "do-build": false,
             "approval_ticket": "MB-65216"
         }
     }
