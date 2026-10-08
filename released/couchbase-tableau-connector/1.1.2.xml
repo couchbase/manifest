@@ -1,0 +1,22 @@
+<manifest>
+  <remote name="apache" fetch="https://github.com/apache/" />
+  <remote name="couchbase" fetch="https://github.com/couchbase" review="review.couchbase.org" />
+  <remote name="couchbase-priv" fetch="ssh://git@github.com/couchbase/" review="review.couchbase.org" />
+  <remote name="couchbasedeps" fetch="https://github.com/couchbasedeps/" review="review.couchbase.org" />
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org" />
+  <remote name="tableau" fetch="https://github.com/tableau/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="asterixdb-clients" path="cbtaco/asterixdb-clients" remote="apache" revision="b5d6318a78d28bd21a20dee87dcba0ed6d66faaa" upstream="master" dest-branch="master" />
+  <project name="build" revision="c1b485bbf14aa1176be5ea26b7982f4002188429">
+    <annotation name="RELEASE" value="1.1.2" />
+    <annotation name="PRODUCT" value="couchbase-tableau-connector" />
+    <annotation name="BLD_NUM" value="100" />
+    <annotation name="VERSION" value="1.1.2" />
+  </project>
+  <project name="connector-plugin-sdk" path="cbtaco/connector-plugin-sdk" remote="tableau" revision="5277ca34678cd1b221d5addfe60df35150a0cd48" groups="notdefault" />
+  <project name="couchbase-jdbc-driver" path="cbtaco/couchbase-jdbc-driver" remote="couchbaselabs" revision="e541dd9ea938093bbe51132208f4b96f316fb834" upstream="main" dest-branch="main" />
+  <project name="couchbase-tableau-connector" path="cbtaco" remote="couchbase-priv" revision="397a25793e0fc223e6618386d4d672ce5106fb37" upstream="master" dest-branch="master" />
+  <project name="product-texts" revision="ec09296ae7979a7bf5ca80c25842afca45e0ec99" upstream="master" dest-branch="master" />
+</manifest>
