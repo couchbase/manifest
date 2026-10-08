@@ -4,7 +4,7 @@
 
   <remove-project name="build"/>
   <project name="build" path="cbbuild" revision="c1b485bbf14aa1176be5ea26b7982f4002188429" remote="couchbase">
-    <annotation name="VERSION" value="1.2.0" keep="true"/>
+    <annotation name="VERSION" value="1.2.1" keep="true"/>
     <!-- SDK flavor(s) of the connector to build. One of:
            analytics    -> new Analytics SDK   (enterprise-analytics taco)
            operational  -> legacy core SDK     (couchbase-analytics taco)
