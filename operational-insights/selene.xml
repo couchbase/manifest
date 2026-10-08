@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Selene, the release after Helios.  This mirrors helios.xml, layering on the same
+       inherited_helios.xml, and differs only in where asterixdb comes from: Helios builds it
+       from its helios branch, Selene from master.  Keep the two in step until Selene needs a
+       layer of its own. -->
+  <include name="operational-insights/inherited_helios.xml"/>
+
+  <!-- Pick up Analytics projects from master branches -->
+  <extend-project name="cbas-core" revision="master" dest-branch="master">
+    <!-- MB-74372: workspace-level CLAUDE.md for Claude Code sessions at the client root -->
+    <linkfile src="claude/workspace/CLAUDE.md" dest="CLAUDE.md" />
+  </extend-project>
+  <extend-project name="asterixdb" revision="master" dest-branch="master" />
+  <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
+  <extend-project name="cbas" revision="master" dest-branch="master" />
+  <extend-project name="cbas-ui" revision="master" dest-branch="master" />
+
+  <!-- Add the columnar-ui project -->
+  <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" />
+
+  <!-- pick up latest product-texts so we have the most accurate README.txt & licenses -->
+  <extend-project name="product-texts" revision="master" />
+
+  <!-- pick up latest product-metadata so we have the most accurate NOTICE.txt -->
+  <extend-project name="product-metadata" revision="master" />
+
+  <!-- per ceej, we should pick up the latest golang project -->
+  <extend-project name="golang" revision="main" />
+
+  <!-- CBD-6545: pick up installer from master -->
+  <extend-project name="voltron" revision="master" />
+
+  <!-- MB-73989: the base manifest pins tlm to the sha its server build was cut from, so
+       tlm work landing on morpheus never reaches this product.  Pin the head that carries
+       it; bump as further tlm work lands, as lumina.xml does for its own pin. -->
+  <extend-project name="tlm" revision="111cdb253a69f2009253eb6ff58ed9fefa9c90b5"/>
+
+  <!-- Update build project to provide different annotations -->
+  <remove-project name="build"/>
+  <project name="build" path="cbbuild" revision="" upstream="master" dest-branch="master" groups="notdefault,build">
+    <annotation name="VERSION" value="3.1.0"     keep="true"/>
+    <annotation name="SERVER_VERSION" value="8.0.3"     keep="true"/>
+    <annotation name="SERVER_BLD_NUM" value="8.0.3-5925"     keep="true"/>
+    <annotation name="SERVER_RELEASE" value="morpheus"     keep="true"/>
+    <annotation name="COLUMNAR" value="true"     keep="true"/>
+
+    <!-- The product key: the latestbuilds directory and the name build jobs
+         publish under.  Read rather than derived, so a toy manifest kept
+         outside the product directory structure still identifies itself.
+         keep="true" is required or `repo manifest` drops it. -->
+    <annotation name="PRODUCT" value="operational-insights"     keep="true"/>
+
+    <!-- Product identity (rebrand, plan 10.4).  keep="true" is required: `repo manifest`
+         drops annotations without it, so a developer workspace would otherwise fall back to
+         the CMake defaults and build an unbranded product. -->
+    <annotation name="PRODUCT_DISPLAY_NAME" value="Operational Insights"     keep="true"/>
+    <annotation name="PRODUCT_PACKAGE_NAME" value="operational-insights"     keep="true"/>
+    <!-- Version-string suffix; deliberately not derived from PRODUCT_PACKAGE_NAME, which is
+         pinned above, nor spelled with a hyphen so the version splits on the last '-'.
+         See plan 9.4. -->
+    <annotation name="PRODUCT_VERSION_SUFFIX" value="operational_insights"     keep="true"/>
+    <!-- The bin/ command.  Declared rather than derived: Enterprise Analytics'
+         launcher is couchbase-server, which is neither its product key nor its
+         package name, so there is no rule to derive from.  ns_server installs
+         it and voltron's systemd unit starts it, so both read this. -->
+    <annotation name="PRODUCT_LAUNCHER_NAME" value="operational-insights"     keep="true"/>
+
+    <!-- Compatibility versions.  Advance the current version only; both minimums stay put,
+         or the swap-rebalance and Capella online-upgrade paths break.  See plan 9.5. -->
+    <annotation name="COLUMNAR_COMPAT_VERSION" value="3.1.0"/>
+    <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0"/>
+    <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="2.1.0"/>
+  </project>
+
+  <remove-project name="query"/>
+  <remove-project name="query-ee"/>
+  <remove-project name="indexing"/>
+  <remove-project name="goxdcr"/>
+  <remove-project name="xdcrDiffer"/>
+  <remove-project name="gometa"/>
+  <remove-project name="cbft"/>
+  <remove-project name="cbftx"/>
+  <remove-project name="cbgt"/>
+  <remove-project name="hebrew"/>
+  <remove-project name="eventing"/>
+  <remove-project name="eventing-ee"/>
+  <remove-project name="cbbs"/>
+  <remove-project name="n1fty"/>
+  <remove-project name="bhive"/>
+  <remove-project name="plasma"/>
+  <remove-project name="gocbcrypto"/>
+  <remove-project name="magma"/>
+  <remove-project name="backup"/>
+  <remove-project name="forestdb"/>
+  <remove-project name="docloader"/>
+  <remove-project name="go-couchbase"/>
+  <remove-project name="gomemcached"/>
+  <remove-project name="go_json"/>
+  <remove-project name="libcouchbase"/>
+  <remove-project name="testrunner"/>
+  <remove-project name="gocoverage"/>
+  <remove-project name="geocouch"/>
+  <remove-project name="vbmap"/>
+  <remove-project name="udf-api"/>
+  <remove-project name="godbc"/>
+  <remove-project name="nitro"/>
+  <remove-project name="regulator"/>
+</manifest>

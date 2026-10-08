@@ -1,5 +1,18 @@
 {
     "manifests": {
+        "operational-insights/selene.xml": {
+            "release": "selene",
+            "release_name": "Selene (3.1.0)",
+            "production": true,
+            "start_build": 1000,
+            "trigger_blackduck": true,
+            "interval": 240,
+            "keep_git": true,
+            "jenkins_job": "couchbase-columnar-build",
+            "restricted": false,
+            "do-build": true,
+            "approval_ticket": "MB-74503"
+        },
         "operational-insights/helios.xml": {
             "release": "helios",
             "release_name": "Helios (3.0.0)",
