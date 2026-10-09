@@ -4,7 +4,7 @@
   <include name="operational-insights/inherited_helios.xml"/>
 
   <!-- Pick up Analytics projects from master branches -->
-  <extend-project name="cbas-core" revision="master" dest-branch="master">
+  <extend-project name="cbas-core" revision="helios" dest-branch="helios">
     <!-- MB-74372: workspace-level CLAUDE.md for Claude Code sessions at the client root -->
     <linkfile src="claude/workspace/CLAUDE.md" dest="CLAUDE.md" />
   </extend-project>
