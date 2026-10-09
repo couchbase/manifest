@@ -3,18 +3,20 @@
 
   <include name="operational-insights/inherited_helios.xml"/>
 
-  <!-- Pick up Analytics projects from master branches -->
+  <!-- Analytics projects: cbas-core and asterixdb have helios branches; the rest are pinned to
+       the master shas Helios was cut with. If Helios needs a fix in one of them, branch it
+       from its pin then and move it to that branch, as for cbas-core. -->
   <extend-project name="cbas-core" revision="helios" dest-branch="helios">
     <!-- MB-74372: workspace-level CLAUDE.md for Claude Code sessions at the client root -->
     <linkfile src="claude/workspace/CLAUDE.md" dest="CLAUDE.md" />
   </extend-project>
   <extend-project name="asterixdb" revision="helios" dest-branch="helios" />
-  <extend-project name="analytics-dcp-client" revision="master" dest-branch="master" />
-  <extend-project name="cbas" revision="master" dest-branch="master" />
-  <extend-project name="cbas-ui" revision="master" dest-branch="master" />
+  <extend-project name="analytics-dcp-client" revision="0b23dbafc95cb940f1ff68b332200c6ab844cc02" dest-branch="master" />
+  <extend-project name="cbas" revision="420930146881dd66c47699c3d58affc9e7a83dec" dest-branch="master" />
+  <extend-project name="cbas-ui" revision="749513e5fa07b565d5e9344a706ea9ca7465cdb6" dest-branch="master" />
 
   <!-- Add the columnar-ui project -->
-  <project name="columnar-ui-v1" groups="notdefault,build,enterprise,analytics" />
+  <project name="columnar-ui-v1" revision="dcc1d512c9243a4c34add10aa8310d9f4bcc7613" dest-branch="master" groups="notdefault,build,enterprise,analytics" />
 
   <!-- pick up latest product-texts so we have the most accurate README.txt & licenses -->
   <extend-project name="product-texts" revision="master" />
@@ -25,8 +27,8 @@
   <!-- per ceej, we should pick up the latest golang project -->
   <extend-project name="golang" revision="main" />
 
-  <!-- CBD-6545: pick up installer from master -->
-  <extend-project name="voltron" revision="master" />
+  <!-- CBD-6545: installer; pinned like the analytics projects above -->
+  <extend-project name="voltron" revision="47c41ab063bc3b9f34e0aeeb54b21d52ab3f6b9f" dest-branch="master" />
 
   <!-- MB-73989: the base manifest pins tlm to the sha its server build was cut from, so
        tlm work landing on morpheus never reaches this product.  Pin the head that carries
