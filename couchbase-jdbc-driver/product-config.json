@@ -1,0 +1,24 @@
+{
+    "manifests": {
+        "couchbase-jdbc-driver/couchbase-operational-insights.xml": {
+            "release_name": "Couchbase Operational Insights JDBC Driver 3.0.x (main branch)",
+            "production": true,
+            "interval": 720,
+            "restricted": false,
+            "start_build": 100,
+            "trigger_blackduck": true,
+            "do-build": true,
+            "keep_git": true
+        },
+        "couchbase-jdbc-driver/couchbase-analytics.xml": {
+            "release_name": "Couchbase Analytics JDBC Driver 1.2.x (main branch)",
+            "production": true,
+            "interval": 720,
+            "restricted": false,
+            "start_build": 100,
+            "trigger_blackduck": true,
+            "do-build": true,
+            "keep_git": true
+        }
+    }
+}

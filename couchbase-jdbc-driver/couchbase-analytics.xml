@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org"/>
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org"/>
+
+  <default remote="couchbase" revision="main"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Main source: Supported by Couchbase Analytics team -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="couchbase-jdbc-driver" remote="couchbaselabs"/>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- Build support - build scripts, etc.                -->
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <project name="build" path="cbbuild" revision="28c54a2a9a305d2951c6f75cd6beb6dda6301e5a">
+    <annotation name="VERSION" value="1.2.1" keep="true"/>
+    <!-- Driver flavor this manifest builds: the couchbase-analytics-jdbc-driver
+         module, via the flavor-couchbase-analytics Maven profile. -->
+    <annotation name="FLAVOR" value="couchbase-analytics" keep="true"/>
+    <!-- DigiCert code-signing of the driver jar. Each signature is billed,
+         so set this to true only for release-candidate builds. -->
+    <annotation name="SIGN" value="false" keep="true"/>
+  </project>
+</manifest>
