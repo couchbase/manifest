@@ -17,7 +17,7 @@
 
   <!-- MB-72186, CBD-6820: Selene runs the operational-insights ns_server branch; Server's
        ns_server commits are not ours to merge forward. -->
-  <extend-project name="ns_server" revision="operational-insights-3.0" dest-branch="operational-insights-3.0"/>
+  <extend-project name="ns_server" revision="724218693d18419b7a6f8d05b98d91e5200c1322" dest-branch="morpheus"/>
 
   <extend-project name="couchbase-cli" revision="385c95442597acb473a86d4f0ec1067d3667e974"/>
 
