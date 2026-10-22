@@ -7,7 +7,7 @@
             "restricted": false,
             "start_build": 100,
             "trigger_blackduck": false,
-            "jenkins_job": "couchbase-converge-mongodb-build",
+            "jenkins_job": "couchbase-k8s-microservice-build",
             "keep_git": true
         }
     }

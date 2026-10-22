@@ -9,7 +9,7 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned primary repository                 -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="cbmcsync" remote="couchbase-priv" revision="main"/>
+  <project name="cbcmsync" remote="couchbase-priv" path="couchbase-converge-cbcmsync" revision="main"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Build support - build scripts, etc.                -->

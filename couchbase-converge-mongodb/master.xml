@@ -8,7 +8,7 @@
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <!-- Couchbase-owned primary repository                 -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <project name="rosetta-mdb" remote="couchbase" path="rosetta-mdb" sync-s="true"/>
+  <project name="rosetta-mdb" remote="couchbase" path="couchbase-converge-mongodb" sync-s="true"/>
   <project name="rosetta-mdb-crs" remote="couchbaselabs" path="rosetta-mdb-crs" revision="rosetta" sync-s="true"/>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->

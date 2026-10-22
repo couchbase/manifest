@@ -1,13 +1,13 @@
 {
     "manifests": {
-        "couchbase-converge-mcsync/main.xml": {
-            "release_name": "Couchbase Converge Mcsync - main branch",
+        "couchbase-converge-cbcmsync/main.xml": {
+            "release_name": "Couchbase Converge Cbcmsync - main branch",
             "production": true,
             "interval": 240,
             "restricted": false,
             "start_build": 100,
             "trigger_blackduck": false,
-            "jenkins_job": "couchbase-converge-mcsync-build",
+            "jenkins_job": "couchbase-k8s-microservice-build",
             "keep_git": true
         }
     }
