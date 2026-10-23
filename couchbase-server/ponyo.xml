@@ -79,6 +79,7 @@
   <project name="go-couchbase"                                                       path="goproj/src/github.com/couchbase/go-couchbase" groups="backup"/>
   <project name="goutils"                                                            path="goproj/src/github.com/couchbase/goutils" groups="bsl"/>
   <project name="godbc"                                                              path="goproj/src/github.com/couchbase/godbc"/>
+  <project name="logstats"                                                           path="goproj/src/github.com/couchbase/logstats"/>
 
   <!-- C/C++ support libraries -->
   <project name="gsl-lite"       remote="couchbasedeps" revision="refs/tags/v0.38.1" path="third_party/gsl-lite" groups="kv"/>
