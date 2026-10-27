@@ -25,8 +25,11 @@
   <!-- pick up latest product-metadata so we have the most accurate NOTICE.txt -->
   <extend-project name="product-metadata" revision="master" />
 
-  <!-- per ceej, we should pick up the latest golang project -->
-  <extend-project name="golang" revision="main" />
+  <!-- MB-74640: golang main moved SUPPORTED_NEWER to Go 1.27 (CBD-6921), whose json v2
+       engine corrupts metakv entries handed out by the morpheus cbauth this product builds
+       against.  Track supported-newer-1.26, as morpheus does, until a cbauth carrying the
+       MB-74640 fix reaches the base manifest. -->
+  <extend-project name="golang" revision="supported-newer-1.26" />
 
   <!-- CBD-6545: installer; pinned like the analytics projects above -->
   <extend-project name="voltron" revision="47c41ab063bc3b9f34e0aeeb54b21d52ab3f6b9f" dest-branch="master" />
