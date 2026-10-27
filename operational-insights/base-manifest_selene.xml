@@ -15,7 +15,7 @@
   <project name="build" path="cbbuild" revision="28c54a2a9a305d2951c6f75cd6beb6dda6301e5a" upstream="master" dest-branch="master" groups="notdefault,build">
     <annotation name="RELEASE" value="morpheus" />
     <annotation name="PRODUCT" value="couchbase-server" />
-    <annotation name="BLD_NUM" value="6326" />
+    <annotation name="BLD_NUM" value="6330" />
     <annotation name="VERSION" value="8.0.4" />
     <annotation name="BSL_PRODUCT" value="Couchbase Server" />
     <annotation name="BSL_VERSION" value="8.0" />
@@ -23,7 +23,7 @@
     <annotation name="BSL_MAIN_OK" value="true" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="8d1e617759cf3a00c161369e378299282401e6cf" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="5e5c14adf514c27cb03c21b4c7c4cd6a77475701" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="fe2cf504d35bc37023cd57fa440b1ce0f9bd1541" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="5384381db9bf02bcbcdaec085c07cd5f852e9505" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="06758dcae7533fd82131bc6c02b9ce335a4767d2" upstream="morpheus" dest-branch="morpheus" groups="backup" />
   <project name="cbbs" remote="couchbase-priv" revision="914bcaa2eb4629ce3c19e8c1ff6ac1d3b31d46e1" upstream="morpheus" dest-branch="morpheus" groups="backup,notdefault,enterprise" />
@@ -32,7 +32,7 @@
   <project name="cbgt" revision="4bf47961ef4246eb496b8798955670d62ec12cc0" upstream="morpheus" dest-branch="morpheus" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="4b185fb7d5f0e136755756b8cc3029ec64d51639" upstream="master" dest-branch="master" groups="bsl" />
   <project name="couchbase-cli" revision="5bead9d09fe6c90f28d025327bfe4a57e137b1e1" upstream="morpheus" dest-branch="morpheus" groups="kv" />
-  <project name="couchdb" revision="706d04031d9a608b6fd4e73be9d235933f1f78e2" upstream="morpheus" dest-branch="unstable" />
+  <project name="couchdb" revision="edf64023ca89766ee5443c79a25714911cc137b0" upstream="morpheus" dest-branch="unstable" />
   <project name="couchdbx-app" revision="f797baeb32ff473cec77dae36e239dd806afc519" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="couchstore" revision="6d7043acd2040362376caadf17ef57bc9ba50bdf" upstream="morpheus" dest-branch="morpheus" groups="kv" />
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="218129e2b4b06c6381c7aabb7b5c78dff7f07e3c" upstream="master" dest-branch="master" />
@@ -52,17 +52,17 @@
   <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" remote="couchbase-priv" revision="e7aee165b4f3c3f3c7dee8d25f39f41769c80e37" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="gsl-lite" path="third_party/gsl-lite" remote="couchbasedeps" revision="e1c381746c2625a76227255f999ae9f14a062208" upstream="refs/tags/v0.38.1" dest-branch="refs/tags/v0.38.1" groups="kv" />
   <project name="hebrew" remote="couchbase-priv" revision="c57616b187889a5318688f49817ccaceb9c098b9" upstream="master" dest-branch="master" groups="notdefault,enterprise" />
-  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="b9c33e774e08d8a29899aae45b26c8e372ef050e" upstream="morpheus" dest-branch="unstable" groups="bsl" />
+  <project name="indexing" path="goproj/src/github.com/couchbase/indexing" revision="a70ecfc05dc8a138e20498e443583b922887cdd1" upstream="morpheus" dest-branch="unstable" groups="bsl" />
   <project name="kv_engine" revision="190796fa4b1331d044c0c613e898b4b93d92665c" upstream="morpheus" dest-branch="morpheus" groups="kv,bsl" />
   <project name="libcouchbase" revision="93bbcb6ac9301cb813ba84216235ec9afcfceb0f" upstream="refs/tags/3.3.19" dest-branch="refs/tags/3.3.19" />
   <project name="magma" remote="couchbase-priv" revision="94ef61ddc6609825b956b38d338e8c1a78049c8c" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise,kv_ee" />
   <project name="n1fty" path="goproj/src/github.com/couchbase/n1fty" revision="71165a1cf271e79e147bc30988a2ae5e2a2f46ca" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="nitro" path="goproj/src/github.com/couchbase/nitro" revision="c33425b3950e060ea284df4c479448e7c17ac611" upstream="morpheus" dest-branch="unstable" groups="bsl" />
-  <project name="ns_server" revision="3e2b1c6459a8295db5262cd8f2a19d052b64fde5" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
+  <project name="ns_server" revision="40f3622f4e072213174fa85287fdc0ad40a83b86" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="phosphor" revision="df9f5319f138bbf973f98b8180c80f3c5f95a9d1" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
   <project name="plasma" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" revision="2a3eab2b53c908769986fbe538922df96b291402" upstream="morpheus" dest-branch="unstable" groups="notdefault,enterprise" />
   <project name="platform" revision="29e0c85facc59761f8d6742eea80d32e5b01ac06" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
-  <project name="product-metadata" revision="73df48d8b26f131214cb6804aa01cc51d7a041c4" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="product-metadata" revision="6b6cad8cc170ae1d0467131bf3971b1e6df1297b" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="product-texts" revision="ab8c95f00104a2146cf2e0db9d74b9b2e0eb29a5" upstream="master" dest-branch="master" />
   <project name="query" path="goproj/src/github.com/couchbase/query" revision="111c85a8c61af241c799c3d169f959e7d597aa94" upstream="morpheus" dest-branch="morpheus" groups="bsl" />
   <project name="query-ee" path="goproj/src/github.com/couchbase/query-ee" remote="couchbase-priv" revision="fdba9917f4758a471bc5a595bb255ef40ee81f25" upstream="morpheus" dest-branch="morpheus" groups="notdefault,enterprise" />
@@ -70,7 +70,7 @@
   <project name="regulator" path="goproj/src/github.com/couchbase/regulator" remote="couchbase-priv" revision="c5d3d8d2bcc1610c511889199b5e63f21c0fbe2f" upstream="main" dest-branch="main" groups="notdefault,enterprise" />
   <project name="sigar" revision="b1718d5c99a2bd37d97fe2c96eb0fd33a06461af" upstream="morpheus" dest-branch="morpheus" groups="kv" />
   <project name="subjson" revision="1e65a5472e3b4f496aa9338dfde99e269a377661" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv" />
-  <project name="testrunner" revision="540e52e78e159fc8df59bdf6e35accdd82956e16" upstream="morpheus" dest-branch="morpheus" />
+  <project name="testrunner" revision="43cbe5dd9e4cfa7cbea818a14d6d8ffc4f8ae644" upstream="morpheus" dest-branch="morpheus" />
   <project name="tlm" revision="756b9bd0624796e762be148221a51f616acc8e34" upstream="morpheus" dest-branch="morpheus" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh" />
     <copyfile src="GNUmakefile" dest="GNUmakefile" />
@@ -82,6 +82,6 @@
   </project>
   <project name="udf-api" path="goproj/src/github.com/couchbase/udf-api" revision="b2788ae3d412356a330b36d7f38ad2c66edb5879" upstream="master" dest-branch="master" />
   <project name="vbmap" revision="5fde1efec33838bc0b9a1b08b233b4b423101d99" />
-  <project name="voltron" remote="couchbase-priv" revision="955d5cdb96b6dc41cf87860fe24974c46af34258" upstream="master" dest-branch="master" groups="notdefault,packaging" />
+  <project name="voltron" remote="couchbase-priv" revision="0b5aa3b9f92894f847768e5bbfb143cc4b5af78d" upstream="master" dest-branch="master" groups="notdefault,packaging" />
   <project name="xdcrDiffer" path="goproj/src/github.com/couchbase/xdcrDiffer" revision="3ef49b4515ec97853a8471b1a30550cd5449c4e3" upstream="morpheus" dest-branch="morpheus" />
 </manifest>
