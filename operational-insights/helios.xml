@@ -42,7 +42,7 @@
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
   <project name="build" path="cbbuild" revision="" upstream="master" dest-branch="master" groups="notdefault,build">
-    <annotation name="VERSION" value="3.0.0"     keep="true"/>
+    <annotation name="VERSION" value="3.0.1"     keep="true"/>
     <annotation name="SERVER_VERSION" value="8.0.3"     keep="true"/>
     <annotation name="SERVER_BLD_NUM" value="8.0.3-5925"     keep="true"/>
     <annotation name="SERVER_RELEASE" value="morpheus"     keep="true"/>
@@ -71,7 +71,7 @@
 
     <!-- Compatibility versions.  Advance the current version only; both minimums stay put,
          or the swap-rebalance and Capella online-upgrade paths break.  See plan 9.5. -->
-    <annotation name="COLUMNAR_COMPAT_VERSION" value="3.0.0"/>
+    <annotation name="COLUMNAR_COMPAT_VERSION" value="3.0.1"/>
     <annotation name="MIN_SUPPORTED_COLUMNAR_COMPAT_VERSION" value="2.0.0"/>
     <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="2.1.0"/>
   </project>
