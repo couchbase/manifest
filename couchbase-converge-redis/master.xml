@@ -15,7 +15,7 @@
   <!-- Build support - build scripts, etc.                -->
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <project name="build" path="cbbuild" revision="8ba9841f5fd3b60f22203be47bc6e81f7b9b6b2e">
-    <annotation name="VERSION" value="0.9.0" keep="true"/>
+    <annotation name="VERSION" value="0.10.0" keep="true"/>
     <!-- No GOVERSION: the build uses the exact Go version from go.mod -->
   </project>
 </manifest>

@@ -3,7 +3,7 @@
         "couchbase-converge-redis/master.xml": {
             "release_name": "Couchbase Converge Redis - master branch",
             "production": true,
-            "interval": 240,
+            "interval": 120,
             "restricted": false,
             "start_build": 100,
             "trigger_blackduck": false,
