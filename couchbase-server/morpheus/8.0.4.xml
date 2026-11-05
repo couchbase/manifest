@@ -49,7 +49,7 @@
   <project name="sigar" revision="b1718d5c99a2bd37d97fe2c96eb0fd33a06461af" groups="kv"/>
   <project name="subjson" revision="1e65a5472e3b4f496aa9338dfde99e269a377661" groups="bsl,kv"/>
   <project name="testrunner" revision="morpheus"/>
-  <project name="tlm" revision="36174ceb5923dbd85756c78f23a6de5de80657aa" groups="bsl,kv">
+  <project name="tlm" revision="76c96a26da454ff8b7267012b8ffdec1568d321e" groups="bsl,kv">
     <copyfile src="Build.sh" dest="Build.sh"/>
     <copyfile src="GNUmakefile" dest="GNUmakefile"/>
     <copyfile src="Makefile" dest="Makefile"/>
