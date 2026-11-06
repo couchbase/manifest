@@ -46,17 +46,17 @@
             "interval": 125,
             "keep_git": true,
             "restricted": true,
-            "approval_ticket": "MB-75064"
+            "approval_ticket": "MB-73128"
         },
         "couchbase-server/morpheus/8.0.4.xml": {
             "release": "morpheus",
             "release_name": "Morpheus (8.0.4)",
             "parent": "couchbase-server/morpheus.xml",
             "production": true,
-            "start_build": 6100,
+            "start_build": 6400,
             "trigger_blackduck": true,
-            "interval": 283,
-            "do-build": false,
+            "interval": 125,
+            "do-build": true,
             "keep_git": true,
             "restricted": true,
             "approval_ticket": "MB-75159"
