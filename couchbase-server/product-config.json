@@ -56,9 +56,10 @@
             "start_build": 6100,
             "trigger_blackduck": true,
             "interval": 283,
+            "do-build": false,
             "keep_git": true,
             "restricted": true,
-            "approval_ticket": "MB-73128"
+            "approval_ticket": "MB-75159"
         },
         "couchbase-server/morpheus/8.0.3.xml": {
             "release": "morpheus",
