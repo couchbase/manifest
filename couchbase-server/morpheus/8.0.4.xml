@@ -18,7 +18,7 @@
   <project name="cbgt" revision="4bf47961ef4246eb496b8798955670d62ec12cc0"/>
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl" revision="4b185fb7d5f0e136755756b8cc3029ec64d51639"/>
   <project name="couchbase-cli" groups="kv" revision="7056b9b10f2ef5d4ae1591bf10f1e7a3e493c8b6"/>
-  <project name="couchdb" revision="706d04031d9a608b6fd4e73be9d235933f1f78e2" dest-branch="unstable"/>
+  <project name="couchdb" revision="8.0.4" dest-branch="unstable"/>
   <project name="couchstore" revision="b11d344556d6e5827e0b84489fb70aa67ba89090" groups="kv"/>
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="218129e2b4b06c6381c7aabb7b5c78dff7f07e3c"/>
   <!-- forestdb uses "cb-master" branch in place of "master" for all production builds. -->
