@@ -9,15 +9,15 @@
   <default remote="couchbase" revision="master" />
 
   <!-- Core Couchbase Server projects -->
-  <project name="backup" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise"/>
+  <project name="backup" revision="totoro" remote="couchbase-priv" path="backup" groups="backup,notdefault,enterprise"/>
   <project name="bhive"  path="goproj/src/github.com/couchbase/bhive" remote="couchbase-priv" revision="totoro" groups="notdefault,enterprise"/>
-  <project name="cbbs" remote="couchbase-priv" groups="backup,notdefault,enterprise"/>
+  <project name="cbbs"   revision="totoro" remote="couchbase-priv" groups="backup,notdefault,enterprise"/>
   <project name="cbft"   revision="totoro" />
   <project name="cbftx"  remote="couchbase-priv" groups="notdefault,enterprise" revision="totoro"/>
   <project name="hebrew" remote="couchbase-priv" groups="notdefault,enterprise"/>
   <project name="cbgt"   revision="totoro" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl"/>
-  <project name="couchbase-cli" groups="kv"/>
+  <project name="couchbase-cli" revision="totoro" groups="kv"/>
   <project name="couchdb" dest-branch="unstable"/>
   <project name="couchstore" revision="totoro" groups="kv"/>
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" />
