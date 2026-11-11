@@ -64,7 +64,7 @@
   <project name="cbas-core" revision="8.0.4" path="analytics" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
   <project name="asterixdb" revision="8.0.4" path="analytics/asterixdb" groups="notdefault,enterprise,analytics"/>
   <project name="analytics-dcp-client" revision="6837518094d28dccd7e78b808c42296ecccb3787" path="analytics/java-dcp-client" groups="notdefault,enterprise,analytics"/>
-  <project name="cbas" revision="53614ad4d6eefd2338f0b5ed22549509e6db8e89" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
+  <project name="cbas" revision="8.0.4" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" groups="notdefault,enterprise,analytics"/>
   <project name="cbas-ui" revision="5384381db9bf02bcbcdaec085c07cd5f852e9505" groups="notdefault,enterprise,analytics"/>
 
   <!-- Third-party projects -->
