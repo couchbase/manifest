@@ -18,7 +18,7 @@
   <project name="cbgt"   revision="totoro" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" groups="bsl"/>
   <project name="couchbase-cli" revision="totoro" groups="kv"/>
-  <project name="couchdb" dest-branch="unstable"/>
+  <project name="couchdb"  revision="totoro" dest-branch="unstable"/>
   <project name="couchstore" revision="totoro" groups="kv"/>
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" />
   <!-- forestdb uses "cb-master" branch in place of "master" for all production builds. -->
@@ -32,8 +32,8 @@
   <project name="nitro"       revision="totoro" path="goproj/src/github.com/couchbase/nitro" dest-branch="unstable" groups="bsl"/>
   <project name="indexing"    revision="totoro" path="goproj/src/github.com/couchbase/indexing" dest-branch="unstable" groups="bsl"/>
   <project name="plasma"      revision="totoro" path="goproj/src/github.com/couchbase/plasma" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
-  <project name="eventing"    path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
-  <project name="eventing-ee" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
+  <project name="eventing"    revision="totoro" path="goproj/src/github.com/couchbase/eventing" dest-branch="unstable" groups="notdefault,enterprise"/>
+  <project name="eventing-ee" revision="totoro" path="goproj/src/github.com/couchbase/eventing-ee" remote="couchbase-priv" dest-branch="unstable" groups="notdefault,enterprise"/>
   <project name="kv_engine" revision="totoro" groups="kv,bsl"/>
   <project name="libcouchbase" revision="refs/tags/3.3.19"/>
   <project name="magma" revision="totoro" groups="notdefault,enterprise,kv_ee" remote="couchbase-priv" />
