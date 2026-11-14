@@ -27,7 +27,12 @@
   <!-- MB-74640: golang main moved SUPPORTED_NEWER to Go 1.27 (CBD-6921), whose json v2
        engine corrupts metakv entries handed out by the morpheus cbauth this product builds
        against.  Track supported-newer-1.26, as morpheus does, until a cbauth carrying the
-       MB-74640 fix reaches the base manifest. -->
+       MB-74640 fix reaches the base manifest.
+       As of 8.0.5-6637 the base pins the head of supported-newer-1.26 itself, so this
+       override is a no-op today.  Revisit it when the base manifest moves golang to a SHA
+       on the 1.27 line: morpheus will then have taken Go 1.27, and this override would
+       hold Selene back on 1.26.  Drop it then, after checking the base's cbauth carries
+       the MB-74640 fix. -->
   <extend-project name="golang" revision="supported-newer-1.26" />
 
   <!-- CBD-6545: pick up installer from master -->
