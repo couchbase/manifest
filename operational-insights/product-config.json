@@ -15,15 +15,29 @@
         },
         "operational-insights/helios.xml": {
             "release": "helios",
-            "release_name": "Helios (3.0.1)",
+            "release_name": "Helios (3.0.2)",
             "production": true,
-            "start_build": 1200,
+            "start_build": 1300,
             "trigger_blackduck": true,
             "interval": 240,
             "keep_git": true,
             "jenkins_job": "couchbase-columnar-build",
             "restricted": true,
             "do-build": true,
+            "approval_ticket": "MB-75341"
+        },
+        "operational-insights/helios/3.0.1.xml": {
+            "release": "helios",
+            "release_name": "Helios (3.0.1)",
+            "production": true,
+            "start_build": 1200,
+            "trigger_blackduck": true,
+            "parent": "operational-insights/helios.xml",
+            "interval": 10080,
+            "keep_git": true,
+            "jenkins_job": "couchbase-columnar-build",
+            "restricted": true,
+            "do-build": false,
             "approval_ticket": "MB-75005"
         }
     }

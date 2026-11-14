@@ -42,7 +42,7 @@
   <!-- Update build project to provide different annotations -->
   <remove-project name="build"/>
   <project name="build" path="cbbuild" revision="" upstream="master" dest-branch="master" groups="notdefault,build">
-    <annotation name="VERSION" value="3.0.1"     keep="true"/>
+    <annotation name="VERSION" value="3.0.2"     keep="true"/>
     <annotation name="SERVER_VERSION" value="8.0.3"     keep="true"/>
     <annotation name="SERVER_BLD_NUM" value="8.0.3-5925"     keep="true"/>
     <annotation name="SERVER_RELEASE" value="morpheus"     keep="true"/>
