@@ -19,6 +19,16 @@
             "trigger_blackduck": true,
             "do-build": false,
             "keep_git": true
+        },
+        "couchbase-jdbc-driver/1.x/1.1.1.xml": {
+            "release_name": "Couchbase JDBC Driver 1.1.1 (as published to Maven Central)",
+            "production": true,
+            "interval": 720,
+            "restricted": false,
+            "start_build": 100,
+            "trigger_blackduck": true,
+            "do-build": false,
+            "keep_git": true
         }
     }
 }

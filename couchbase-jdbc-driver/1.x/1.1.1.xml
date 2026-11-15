@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Couchbase JDBC driver 1.1.1, as published to Maven Central
+       (com.couchbase.client:couchbase-jdbc-driver:1.1.1, tag v1.1.1). Exists
+       only so Black Duck tracks the last release shipped to Central; nothing
+       is built or shipped from it. The Central jar records Impl-Git-Revision
+       2ab5b780, and a rebuild of this commit matches it entry for entry. -->
+  <remote name="couchbase" fetch="https://github.com/couchbase/" review="review.couchbase.org"/>
+  <remote name="couchbaselabs" fetch="https://github.com/couchbaselabs/" review="review.couchbase.org"/>
+
+  <default remote="couchbase" revision="main"/>
+
+  <project name="couchbase-jdbc-driver" remote="couchbaselabs" revision="2ab5b7806e8e56b074e222a10ea8e26a1685a5ba" upstream="main" dest-branch="main"/>
+
+  <project name="build" path="cbbuild" revision="28c54a2a9a305d2951c6f75cd6beb6dda6301e5a">
+    <annotation name="VERSION" value="1.1.1" keep="true"/>
+    <!-- No FLAVOR: 1.1.1 predates the flavor split. The Black Duck scan
+         takes its BOM from build-tools
+         blackduck/couchbase-jdbc-driver/legacy-boms/1.1.1.txt instead. -->
+    <annotation name="SIGN" value="false" keep="true"/>
+  </project>
+</manifest>
