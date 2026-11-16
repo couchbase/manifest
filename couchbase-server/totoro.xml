@@ -23,7 +23,7 @@
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" />
   <!-- forestdb uses "cb-master" branch in place of "master" for all production builds. -->
   <!-- Future release-specific git branches, if necessary, should be made from cb-master. -->
-  <project name="forestdb" revision="9efe6d75d7d61e742af70fb47fe97ad1d04ba86fr" groups="backup"/>
+  <project name="forestdb" revision="9efe6d75d7d61e742af70fb47fe97ad1d04ba86f"/>
   <project name="geocouch"/>
   <project name="gocbcrypto"  path="goproj/src/github.com/couchbase/gocbcrypto" remote="couchbase-priv" revision="totoro"/>
   <project name="gocoverage" revision="main"/>
