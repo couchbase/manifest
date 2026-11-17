@@ -19,8 +19,6 @@
   <project name="couchdb" revision="fa3c64b1b85ad3145bb7910d3fe7ee90c060247e"/>
   <project name="couchstore" revision="fff3e20090414206853b2293f17667279dda0337" groups="kv"/>
   <project name="docloader" path="goproj/src/github.com/couchbase/docloader" revision="13cf07af78594aff20d00db4633af27d81fc921d"/>
-  <!-- forestdb uses "cb-master" branch in place of "master" for all production builds. -->
-  <!-- Future release-specific git branches, if necessary, should be made from cb-master. -->
   <project name="forestdb" revision="4c3b2f9b1d869b6b71556e461d6ee68f941c1ba5" groups="backup,kv"/>
   <project name="geocouch" revision="92def13f6b049553da1aa1488ce0bde6b7d0f459"/>
   <project name="goxdcr" path="goproj/src/github.com/couchbase/goxdcr" revision="03e000156faeecd5e77eb79fc45d7c73f26b2899"/>
