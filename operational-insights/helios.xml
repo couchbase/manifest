@@ -13,7 +13,7 @@
   </extend-project>
   <extend-project name="asterixdb" revision="42af7d9f72871a0171350d268ee977bfdf60a4af" dest-branch="helios" />
   <extend-project name="analytics-dcp-client" revision="0b23dbafc95cb940f1ff68b332200c6ab844cc02" dest-branch="master" />
-  <extend-project name="cbas" revision="420930146881dd66c47699c3d58affc9e7a83dec" dest-branch="master" />
+  <extend-project name="cbas" revision="helios" dest-branch="helios" />
   <extend-project name="cbas-ui" revision="749513e5fa07b565d5e9344a706ea9ca7465cdb6" dest-branch="master" />
 
   <!-- Add the columnar-ui project -->
