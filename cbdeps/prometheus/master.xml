@@ -22,5 +22,5 @@
     <annotation name="NODEJS_VERSION" value="22.19.0" keep="true"/>
     <annotation name="YARN_VERSION" value="1.22.22" keep="true"/>
   </project>
-  <project name="golang" revision="supported-newer-1.26" remote="couchbaselabs"/>
+  <project name="golang" revision="main" remote="couchbaselabs"/>
 </manifest>
