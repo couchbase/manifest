@@ -92,5 +92,5 @@
   <project name="voltron"    remote="couchbase-priv"  groups="notdefault,packaging" />
   <project name="couchdbx-app" groups="notdefault,packaging" />
   <project name="product-metadata" groups="notdefault,packaging" />
-  <project name="golang" revision="supported-newer-1.26" remote="couchbaselabs" groups="kv"/>
+  <project name="golang" revision="main" remote="couchbaselabs" groups="kv"/>
 </manifest>
