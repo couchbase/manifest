@@ -28,7 +28,7 @@
     <annotation name="MIN_SUPPORTED_COLUMNAR_PROVISIONED_COMPAT_VERSION" value="2.1.0" />
   </project>
   <project name="cbas" path="goproj/src/github.com/couchbase/cbas" remote="couchbase-priv" revision="420930146881dd66c47699c3d58affc9e7a83dec" dest-branch="master" groups="notdefault,enterprise,analytics" />
-  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="05f08a289bc2ac5c28ca90e29b16a60b6a2a71ca" upstream="helios" dest-branch="helios" groups="notdefault,enterprise,analytics" />
+  <project name="cbas-core" path="analytics" remote="couchbase-priv" revision="oi-3.0.1" dest-branch="oi-3.0.1" groups="notdefault,enterprise,analytics" />
   <project name="cbas-ui" revision="749513e5fa07b565d5e9344a706ea9ca7465cdb6" dest-branch="master" groups="notdefault,enterprise,analytics" />
   <project name="cbauth" path="goproj/src/github.com/couchbase/cbauth" revision="81a5b0d15e750963b7101a862e02b5f229d4826e" groups="backup" />
   <project name="cbsummary" path="goproj/src/github.com/couchbase/cbsummary" revision="4b185fb7d5f0e136755756b8cc3029ec64d51639" groups="bsl" />
