@@ -1,0 +1,17 @@
+<manifest>
+  <remote name="couchbase" fetch="https://github.com/couchbase/" />
+  
+  <default remote="couchbase" revision="master" />
+  
+  <project name="build" path="cbbuild" revision="0ae8f452cece1e1f48f99e370a103b55bfea2dbe">
+    <annotation name="GO_VERSION" value="1.26.11" />
+    <annotation name="RELEASE" value="3.3.9" />
+    <annotation name="PRODUCT" value="sync_gateway" />
+    <annotation name="BLD_NUM" value="25" />
+    <annotation name="VERSION" value="3.3.9" />
+    <annotation name="BLD_NUM" value="@BLD_NUM@" />
+    <annotation name="RELEASE" value="@RELEASE@" />
+  </project>
+  <project name="product-texts" revision="ab8c95f00104a2146cf2e0db9d74b9b2e0eb29a5" upstream="master" dest-branch="master" />
+  <project name="sync_gateway" revision="2fe45b1230541225e595c9e761d53fd1c018f0fe" upstream="release/3.3.9" dest-branch="release/3.3.9" />
+</manifest>
