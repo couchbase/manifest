@@ -50,7 +50,7 @@
         },
         "couchbase-server/morpheus/8.0.4.xml": {
             "release": "morpheus",
-            "release_name": "Morpheus (8.0.4)",
+            "release_name": "Morpheus (8.0.4-MP1)",
             "parent": "couchbase-server/morpheus.xml",
             "production": true,
             "start_build": 6400,
@@ -59,7 +59,7 @@
             "do-build": true,
             "keep_git": true,
             "restricted": true,
-            "approval_ticket": "MB-75159"
+            "approval_ticket": "MB-75633"
         },
         "couchbase-server/morpheus/8.0.3.xml": {
             "release": "morpheus",
