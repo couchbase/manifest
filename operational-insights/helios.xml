@@ -11,7 +11,7 @@
     <!-- MB-74372: workspace-level CLAUDE.md for Claude Code sessions at the client root -->
     <linkfile src="claude/workspace/CLAUDE.md" dest="CLAUDE.md" />
   </extend-project>
-  <extend-project name="asterixdb" revision="0c503260ea6643da729ef8cef6f63e646858a3c9" dest-branch="helios" />
+  <extend-project name="asterixdb" revision="e89dc7985ce8869b38b0abf67ec1eaaa9ef03154" dest-branch="helios" />
   <extend-project name="analytics-dcp-client" revision="0b23dbafc95cb940f1ff68b332200c6ab844cc02" dest-branch="master" />
   <extend-project name="cbas" revision="helios" dest-branch="helios" />
   <extend-project name="cbas-ui" revision="749513e5fa07b565d5e9344a706ea9ca7465cdb6" dest-branch="master" />
